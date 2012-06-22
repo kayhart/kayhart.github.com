@@ -381,7 +381,7 @@ li.dmenu3 {
 
 .portfoliocontainer {
 	width:1052px;
-	height: 695px;
+	height: auto;
 	overflow: hidden;
 	display: block;
 	float: left;
