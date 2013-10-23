@@ -111,6 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 	.pt-page-1 {
     overflow: auto !important;
     margin-top: -100px;
+    height:1000px;
 	}
 
 }
