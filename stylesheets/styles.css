@@ -242,6 +242,7 @@ body {
 
 .pt-page-4 {
     background: #f29da1;
+    overflow: auto;
 }
 
 .pt-page-5 {
