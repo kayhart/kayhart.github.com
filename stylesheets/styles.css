@@ -109,9 +109,14 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	.pt-page-1 {
-    overflow: auto;
+    overflow: scroll;
     margin-top: -100px;
     height: 600px;
+	}
+
+	.links {
+		height:auto;
+		margin-top: 0px;
 	}
 
 }
