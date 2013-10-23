@@ -107,6 +107,12 @@ h1, h2, h3, h4, h5, h6 {
 	#footer{
 		height: 155px !important; 
 	}
+
+	.pt-page-1 {
+    background: #FFF;
+    overflow: auto;
+	}
+
 }
 
 /** Page Trasitions General **/
