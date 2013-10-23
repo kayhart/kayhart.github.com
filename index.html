@@ -1,324 +1,418 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="de"> <!--<![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>
+    <meta http-equiv="refresh" content="0;url=/ie.html">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html>
+
 <head>
-<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+       <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Keisha Hartley</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!-- scaling not possible (for smartphones, ipad, etc.) -->
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<title>Home</title>
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/skeleton.css">
+    <link rel="stylesheet" href="stylesheets/layout.css">
+    <link rel="stylesheet" href="stylesheets/icon.css">
+    <link rel="stylesheet" href="stylesheets/animation.css"/>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700|Raleway:400,500,300,600,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-<link href="files/css/fonts.css" rel="stylesheet" type="text/css" />
-<link href="files/css/style.css" rel="stylesheet" type="text/css" />
-<link href="files/css/isotope.css" rel="stylesheet" type="text/css" />
-<link href="files/css/mqueries.css" rel="stylesheet" type="text/css" media="screen" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-<script src="files/js/jquery.modernizr.min.js"></script>
+    <!--[if !IE 7]>
+    <style type="text/css">
+      #wrap {display:table;height:100%}
+    </style>
+    <![endif]-->
+
+  <!-- Magnific -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" /></script>
+  <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+  
+  <!-- Javascript
+  ================================================== -->
+  <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script type="text/javascript" src="js/jquery.tipsy.js"></script>
+  <!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
+
+
+   <!-- Favicons
+  ================================================== -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+
+  <script type="text/javascript">  
+      $(function(){
+        $('#Grid').mixitup();
+      }); 
+  </script>
+
+
+ 
+  <script type="text/javascript">
+   $(document).ready(function() {
+      $('.gallery').each(function() { // the containers for all your galleries should have the class gallery
+      $(this).magnificPopup({
+          delegate: 'a', // the container for each your gallery items
+          type: 'image',
+          gallery:{enabled:true}
+      });
+    }); 
+  });
+  </script>
 
 </head>
+
 <body>
-<div id="page">
 
-<section id="top">
-    <div class="top_inner wrapper clearfix">
-            
-            <div class="widget left_float">
-            	<h6>Keisha C. Hartley</h6>			
-                <div class="textwidget">PORTFOLIO</div>
-			</div>                
-            
-            <div class="socialmedia right_float" >
-            	<a class="twitter" href="http://twitter.com/kayhart" target="_blank">Twitter</a>
-                <!--<a class="facebook" href="index.html" target="_blank">Facebook</a>
-		<a class="dribbble" href="index.html" target="_blank">Dribbble</a> 
-                <a class="vimeo" href="index.html" target="_blank">Vimeo</a>
-                <a class="flickr" href="index.html" target="_blank">Flickr</a>
-                <a class="behance" href="index.html" target="_blank">Behance</a>
-                <a class="forrst" href="index.html" target="_blank">Forrst</a> -->
-			</div>
-        
-    </div>
-</section> <!-- END top -->
+<script type='text/javascript'>
+
+if ($(window).width() > 600) {
+    $(function() {
+    $('span[rel=tipsy]').tipsy({fade: true, gravity: 'sw'});
+ });
+}
+else {
+    $(function() {
+    $('span[rel=tipsy]').tipsy({fade: true, gravity: 's'});
+
+ });
+}
+
+</script>
 
 
-<header id="header" class="wrapper">
-	
-    <div class="header_top clearfix">
-    	<div id="logo" class="left_float">
-            <a class="logotype" href="index.html"><img src="files/images/logo.png" alt="Logotype"></a>
-        </div>
-        
-        <nav id="nav" class="right_float">
-            <ul>
-                <li><a href="about.html"  class="loadcontent" rel="about">About</a></li> <!-- class="loadcontent" will make it on the home page -->
-                <!--<li><a href="blog-post01.html" class="loadcontent" rel="contact">Hungry?</a></li> -->
-            </ul>
+<div class="pt-wrapper">
+    <!--All Pages-->
+
+    <div class="pt-page pt-page-1">
+        <div class="sixteen columns center"><img class="bigheart floating" src="images/Pixel-Hart1.png" alt="PixelHart"> </div>
+        <div class="oval center scaling"></div>
+
+      <div class="sixteen columns center links">
+        <nav class="cl-effect-21" id="cl-effect-21">
+          <a class="pt-trigger" data-animation="36" data-goto="2">Resume</a>
+          <a class="pt-trigger" data-animation="2" data-goto="3">Portfolio</a>
+          <a class="pt-trigger" data-animation="3" data-goto="4">Contact</a>
         </nav>
-        
+      </div>
     </div>
-    
-    <div class="header_tagline">
-    
-    <h1>Me</h1>
-    <h3>Graphic Artist, Baking Junkie, & Coffee Lover</h3>
-    
-    </div>
-    	
-     
-    
-    <div id="loader">
-        <img src="files/images/loader.gif" alt="loader" title="Ajax loader" />
-    </div>
-    
-    <div id="close">
-    	<a href="">close</a>
-    </div>
- 	
-</header>
 
 
-     
-<!-- ALL CONTENT WILL BE LOADED IN THIS AREA  -->    
-<section id="pagecontent">
-    <div id="pageloader">        
-            <!-- THE LOADED CONTENT WILL SHOW HERE -->
-    </div> <!-- END #pageloader -->
-</section>    
-<!-- ALL CONTENT WILL BE LOADED IN THIS AREA -->  
-<section id="main">
-    <div class="main_inner wrapper clearfix">
-        
-        <ul class="filter">
-            <li><a class="active" href="" data-option-value="*">All</a></li>
-            <li><a href="" data-option-value=".traditional">Traditional</a></li>
-            <li><a href="" data-option-value=".marketing">Marketing</a></li>
-            <li><a href="" data-option-value=".web">Web</a></li>
-            <li><a href="" data-option-value=".print">Print</a></li>
-        </ul>
-        
-        
-        <div id="masonry" class="entries clearfix">
-                                
-                <div class="masonry_item entry web">
-                    <div class="img_holder">
-                            <a href="portfolio-work01.html" rel="TexasInteractive" class="loadcontent"><img src="files/images/portfolio/work_01.jpg" alt="Portfolio Work 01"/></a>
-                        </div>
-                        
-                    <div class="entry-headline">
-                        <div class="entry-title"><h5><a href="portfolio-work01.html" rel="TexasInteractive" class="loadcontent">Interactive PDF</a></h5></div>
-                        <div class="entry-date">July 27</div>
-                    </div>
-                        
-                    <div class="entry-info">
-                        <p>
-                            Interactive PDF proposal for Texas State Society.
-                        </p>
-                        
-                    
-                    </div>
-                </div>
+    <div class="pt-page pt-page-2">
+      <div class="container">
+        <div class="sixteen columns">
+          <h1 class="remove-bottom supertitle big" style="margin-top: 40px">Keisha Hartley</h1>
 
-                
-                <div class="masonry_item entry print">
-                    <div class="img_holder">
-                            <a href="portfolio-work02.html" rel="TexasBook" class="loadcontent"><img src="files/images/portfolio/work_04.jpg" alt="Portfolio Work 04"/></a>
-                        </div>
-                        
-                    <div class="entry-headline">
-                        <div class="entry-title"><h5><a href="portfolio-work02.html" rel="TexasBook" class="loadcontent">Black Tie & Boots</a></h5></div>
-                        <div class="entry-date">July 27</div>
-                    </div>
-                        
-                    <div class="entry-info">
-                        <p>
-                            Printed booklet for Black Tie & Boots Inaugural Ball.
-                        </p>
-                        
-                    
-                    </div>
-                </div>
-		
-		<div class="masonry_item entry traditional">
-                    <div class="img_holder">
-                            <a href="portfolio-work03.html" rel="Skin" class="loadcontent"><img src="files/images/portfolio/work_07.jpg" alt="Portfolio Work 07"/></a>
-                        </div>
-                        
-                    <div class="entry-headline">
-                        <div class="entry-title"><h5><a href="portfolio-work03.html" rel="Skin" class="loadcontent">Under My Skin</a></h5></div>
-                        <div class="entry-date">April 20</div>
-                    </div>
-                        
-                    <div class="entry-info">
-                        <p>
-                            Mock tattoo design from the drawing off the canvas project.
-                        </p>
-                    
-		    </div>
-                </div>
-		
-		<div class="masonry_item entry traditional">
-                    <div class="img_holder">
-                            <a href="portfolio-work04.html" rel="Cherry" class="loadcontent"><img src="files/images/portfolio/work_10.jpg" alt="Portfolio Work 07"/></a>
-                        </div>
-                        
-                    <div class="entry-headline">
-                        <div class="entry-title"><h5><a href="portfolio-work04.html" rel="Cherry" class="loadcontent">Morning Cherry</a></h5></div>
-                        <div class="entry-date">April 15</div>
-                    </div>
-                        
-                    <div class="entry-info">
-                        <p>
-                            Commissioned photos of cherry tree
-                        </p>
-                    
-		    </div>
-                </div>
-		
-		<div class="masonry_item entry marketing web">
-                    <div class="img_holder">
-                            <a href="portfolio-work06.html" rel="Green" class="loadcontent"><img src="files/images/portfolio/work_16.jpg" alt="Portfolio Work 16"/></a>
-                        </div>
-                        
-                    <div class="entry-headline">
-                        <div class="entry-title"><h5><a href="portfolio-work06.html" rel="Green" class="loadcontent">Sustainability in AV</a></h5></div>
-                        <div class="entry-date">August 25</div>
-                    </div>
-                        
-                    <div class="entry-info">
-                        <p>
-                            Keynote presentation focusing on how to be sustainable with show site production.
-                        </p>
-                    
-		    </div>
-                </div>
-                
-		<div class="masonry_item entry print marketing">
-                    <div class="img_holder">
-                            <a href="portfolio-work05.html" rel="Mag" class="loadcontent"><img src="files/images/portfolio/work_13.jpg" alt="Portfolio Work 13"/></a>
-                        </div>
-                        
-                    <div class="entry-headline">
-                        <div class="entry-title"><h5><a href="portfolio-work05.html" rel="Mag" class="loadcontent">Magazine Layout Design</a></h5></div>
-                        <div class="entry-date">December 29</div>
-                    </div>
-                        
-                    <div class="entry-info">
-                        <p>
-                            Assignment centered around developing a mock magazine.
-                        </p>
-                    
-		    </div>
-                </div>
-		
-		
-		<div class="masonry_item entry print marketing">
-                    <div class="img_holder">
-                            <a href="portfolio-work07.html" rel="Cake" class="loadcontent"><img src="files/images/portfolio/work_19.jpg" alt="Portfolio Work 19"/></a>
-                        </div>
-                        
-                    <div class="entry-headline">
-                        <div class="entry-title"><h5><a href="portfolio-work07.html" rel="Cake" class="loadcontent">Happy Hour Cupcake Co</a></h5></div>
-                        <div class="entry-date">July 29</div>
-                    </div>
-                        
-                    <div class="entry-info">
-                        <p>
-                            Branding design for a small cupcake business.
-                        </p>
-                    
-		    </div>
-                </div>
-		
-		<div class="masonry_item entry marketing">
-                    <div class="img_holder">
-                            <a href="portfolio-work08.html" rel="Bell" class="loadcontent"><img src="files/images/portfolio/work_22.jpg" alt="Portfolio Work 22"/></a>
-                        </div>
-                        
-                    <div class="entry-headline">
-                        <div class="entry-title"><h5><a href="portfolio-work08.html" rel="Bell" class="loadcontent">Julian Bell T-Shirt</a></h5></div>
-                        <div class="entry-date">August 4</div>
-                    </div>
-                        
-                    <div class="entry-info">
-                        <p>
-                            T-Shirt design for local Chicago musician.
-                        </p>
-                    
-		    </div>
-                </div>
-		
-		<div class="masonry_item entry traditional">
-                    <div class="img_holder">
-                            <a href="portfolio-work09.html" rel="Pick" class="loadcontent"><img src="files/images/portfolio/work_25.jpg" alt="Portfolio Work 25"/></a>
-                        </div>
-                        
-                    <div class="entry-headline">
-                        <div class="entry-title"><h5><a href="portfolio-work09.html" rel="Pick" class="loadcontent">Custom Guitar Pick</a></h5></div>
-                        <div class="entry-date">March 16</div>
-                    </div>
-                        
-                    <div class="entry-info">
-                        <p>
-                            Custom Pick design for local Baltimore musician.
-                        </p>
-                    
-		    </div>
-                </div>
-		
-            </div><!-- END #masonry -->
-	</div>       
-</section> <!-- END #content -->
-    
-<footer id="footer">
-	<div class="footer_inner wrapper clearfix">
-        <!-- <div class="left_float">Copyright © 2012 K.C.H. All rights reserved</div>  -->
-	</div>           
-</footer> <!-- END #footer -->
-
-<!-- Fancy Bottom Widget
-<section id="bottom">
-	<div id="slideup">
-    	<a href="" class="">bottom</a>
-    </div>
-    
-	<div class="bottom_inner">
-        <div class="wrapper clearfix">
-        	<div class="column one_third">
-            	<h4>Text Widget</h4>
-                <p>
-                Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. 
-                </p>
-            </div>
-            <div class="column one_third">
-            	<h4>Text Widget</h4>
-                <p>
-                Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. 
-                </p>
-            </div>
-            <div class="column one_third last">
-            	<h4>Text Widget</h4>
-                <p>
-                Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. 
-                </p>
-            </div>
+          <h1 class="remove-bottom supertitle init" style="margin-top: 40px;">KCH</h1>
+          <p class="small">Keisha C. Hartley<p>
+          <hr />
         </div>
+
+        <div class="sixteen columns">
+          <p>
+            <strong class="hi">Hello!</strong> As you can tell my name is Keisha. I'm a graphic designer / web developer. 
+            I've been in the force for about 6 years.
+            I've done everything from web design to building corporate proposals. 
+            My mission is to continue to grow and develop as an artist using my skills in all genres.
+          </p>
+
+          <a class="btn-custom btn-2 btn-2c pt-trigger" data-animation="21" data-goto="1">Back</a>
+
+        </div>
+
+
+        <div class="sixteen columns mts mbl">
+          <h2 class="title mtl remove-bottom"> Skills </h2> 
+          <h5> "I don't have money. But what I do have are a very particular set of skills..."</h5>
+        </div>
+
+        <div class="one-third column">
+          <ul class="square">
+            <li><strong>HTML / HTML5</strong>: Grizzled  veteran of the field back when putting layouts in tables was the "right" way to do it.</li>
+            <li><strong>CSS / SASS</strong>: CSS is my first love, but she is a harsh mistress. Always changing but half the fun is keeping up.</li>
+            <li><strong>Jquery</strong>:I remember the days I used to run from Jquery but no longer. It has become an essential component  of my web design toolbox</li>
+          </ul>
+        </div>
+
+        <div class="one-third column">
+          <ul class="square">
+            <li><strong>Photoshop</strong>: Staring and caring for images until my eyes bleed pixels.</li>
+            <li><strong>Illustrator</strong>: Underrated I say! I love Illustrator and its sexy mathematical vectors.</li>
+            <li><strong>InDesign</strong>: Magazine, flyers and interactive PDF's are a few of the materials I've used InDesign for.</li>
+          </ul>
+        </div>
+
+        <div class="one-third column">
+          <ul class="square">
+            <li><strong>TFS - Visual Studio</strong>: It's never a fun thing when your coworker overwrites 24hrs worth of work is it?</li>
+            <li><strong>GitHub</strong>: This website you're on is currently being hosted using GitHub. Shh..</li>
+            <li><strong>Customer Support</strong>: From answering phones in college to teaching lovely old ladies how to send emails I've done tons of customer services.</li>
+          </ul>
+        </div>
+
+      <!--<div class="one-third column">
+          <div class="progressbar">
+            <span style="width:80%;"><span class="html"></span></span>
+          </div>
+          <p>HTML -<strong>80%</strong></p>
+
+          <div class="progressbar">
+            <span style="width:90%;"><span class="css"></span></span>
+          </div>
+          <p>CSS -<strong> 90%</strong></p>
+
+          <div class="progressbar">
+            <span style="width:60%;"><span class="jquery"></span></span>
+          </div>
+          <p>Jquery -<strong> 60%</strong></p>
+        </div>
+
+        <div class="one-third column">
+         <div class="progressbar">
+            <span style="width:70%;"><span class="photoshop"></span></span>
+          </div>
+          <p>Photoshop -<strong> 70%</strong></p>
+
+          <div class="progressbar">
+            <span style="width:90%;"><span class="illustrator"></span></span>
+          </div>
+          <p>Illustrator -<strong> 90%</strong></p>
+
+          <div class="progressbar">
+            <span style="width:70%;"><span class="indesign"></span></span>
+          </div>
+          <p>InDesign -<strong> 70%</strong></p>
+        </div>
+
+        <div class="one-third column">
+           <div class="progressbar">
+            <span style="width:90%;"><span class="people"></span></span>
+          </div>
+          <p>Customer Services -<strong> 90%</strong></p>
+
+          <div class="progressbar">
+            <span style="width:90%;"><span class="time"></span></span>
+          </div>
+          <p>Time Managment -<strong> 90%</strong></p>
+
+          <div class="progressbar">
+            <span style="width:100%;"><span class="baking"></span></span>
+          </div>
+          <p>Baking -<strong> Grand Master</strong></p>
+        </div> -->
+
+        <hr>
+
+        <div class="fifteen columns">
+          <h2 class="title"> Experience </h2>
+
+          <h5>
+            Web Developer
+            <span aria-hidden="true" class="icon-palette icos tip" rel="tipsy" title="Creative Brainstorming"></span>  
+            <span aria-hidden="true" class="icon-user icos tip" rel="tipsy" title="User Conscious Design"></span>
+            <span aria-hidden="true" class="icon-stopwatch icos tip" rel="tipsy" title="Strict Deadlines"></span>
+            <span aria-hidden="true" class="icon-mobile icos tip" rel="tipsy" title="Responsive Design"></span> 
+          </h5> 
+          
+          <span class="job">Sourcecast, Inc.</span> <span>November 2012 – Present (1 year)Reston, VA </span>
+          <p class="mts">
+            To create visually appealing, functional website using HTML, CSS, JavaScript, and PHP, generating everything from home pages to site layout and function. Once a website is up and running, ensure that the site is cross-functional on desktop and mobile platforms, periodically testing and updating it as needed. Along side web development I create custom logos and designs for our products.
+          </p>
+
+          <h5>
+            Graphic Designer/Production Assistant 
+            <span aria-hidden="true" class="icon-stopwatch icos tip" rel="tipsy" title="Time-oriented"></span> 
+            <span aria-hidden="true" class="icon-user icos tip" rel="tipsy" title="Client based"></span>
+            <span aria-hidden="true" class="icon-rocket icos tip" rel="tipsy" title="Preformance Support"></span>
+          </h5>
+          <span class="job">Williams/Gerard Productions</span> <span>May 2012 – November 2012 (7 months)Arlington, VA</span>
+          <p class="mts">
+            In-house freelance position where I designed web, print and video proposals for prospective clients such as Yahoo!, Sanofi, &amp; Salvation Army. These proposals consist of our company’s capabilities & the potential possibilities we can provide to our clients. Along side designing these products I am responsible for Mac technical assistance as well as our web site maintenance.
+          </p>
+
+          <h5>
+            Family Room Specialist
+            <span aria-hidden="true" class="icon-apple icos tip" rel="tipsy" title="Apple Certified"></span> 
+            <span aria-hidden="true" class="icon-stopwatch icos tip" rel="tipsy" title="Time-oriented"></span> 
+            <span aria-hidden="true" class="icon-user icos tip" rel="tipsy" title="Client based"></span>       
+          </h5>
+          <span class="job">Apple</span> <span>June 2010 – June 2012 (2 years 1 month)</span>
+          <p class="mts">
+           To engage customers in a one of a kind experience that they wouldn't normally get when purchasing a computer. This includes teaching customers about Macs, providing solutions about transferring data from a PC to Mac, and preforming general hardware and technical assistance.
+          </p>
+
+          <h5>
+            Graphic Designer
+            <span aria-hidden="true" class="icon-palette icos tip" rel="tipsy" title="Creative Brainstorming"></span>  
+            <span aria-hidden="true" class="icon-user icos tip" rel="tipsy" title="User Conscious Design"></span>
+            <span aria-hidden="true" class="icon-stopwatch icos tip" rel="tipsy" title="Strict Deadlines"></span>
+          </h5>
+          <span class="job">DecisionStep, Inc.</span> <span>May 2008 – January 2009 (9 months) </span>
+          <p class="mts">
+            Providing quality graphic work ranging from web advertisements, magazine ads, concept work & website layouts. I also worked on designing logos and developing user interfaces for various technical enterprises. During my time with DecisionStep I worked primarily in Adobe InDesign and Photoshop I also developed front-end skills while work with HTML and CSS code. Currently, I have one ad published in a 2008 social media technology magazine.
+          </p>
+        </div>
+
+        <hr/>
+
+        <div class="fifteen columns">
+          <h2 class="title"> Education  </h2>
+          <span class="job">University of Maryland College Park</span> 
+          <p>Bachelor of Art (B.A.), Management Information Systems and Services 2006 - 2011</p>
+        </div>
+
+        <div class="sixteen columns center pt-trigger"  data-animation="21" data-goto="1">
+          <img class="bigheart2 floating" src="images/Pixel-Hart1.png" alt="PixelHart"> 
+          <div class="oval2 center scaling"></div>
+        </div>
+        
+      </div>
     </div>
-</section> -->
-
-</div> <!-- END #page -->
 
 
-<!-- jquery -->
-<script src="files/js/jquery-1.7.1.min.js"></script>
-<script src="files/js/jquery.isotope.min.js"></script>
-<script src='files/js/jquery.easing.1.3.js'></script>
-<script src='files/js/jquery.easing.compatibility.js'></script>
-<script src="files/js/loader.js"></script>
-<script src="files/js/script.js"></script>
+    <div class="pt-page pt-page-3">
+      <div class="container">
+        <div class="sixteen columns center mbl">
+          <h1 class="remove-bottom supertitle big" style="margin-top: 40px">Portfolio</h1>
+          <h1 class="remove-bottom init" style="margin-top: 40px; margin-bottom:0px;">Portfolio</h1>
+
+          <a class="btn-custom center btn-2 btn-2c pt-trigger" style="margin-top: 40px;" data-animation="1" data-goto="1">Back</a>
+        </div>
+
+        <hr>
+
+        <div class="sixteen columns center">
+          <div class=" controls center">  
+            <ul>
+              <li class="filter" data-filter="all">Show All</li>
+              <li class="filter" data-filter="category_1">Logos</li>
+              <li class="filter" data-filter="category_2">Web Design</li>
+              <li class="filter" data-filter="category_1 category_2">Logos &amp; Web Design</li>
+            </ul>
+          </div>
+          
+        
+
+          <!-- GRID -->
+          
+          <ul id="Grid" class="sixteen columns center">
+            <li class="mix category_2 gallery" data-cat="2">
+              <a href="images/portfolio/lovecage1.png" title="Web Product Logo - Love Cage">
+                <img  class="prot" src="images/portfolio/lovecage-sm.png">
+              </a>
+              <a href="images/portfolio/lovecage2.png" title="Website mockup for LoveCage.com"></a>
+            </li>
+
+            <li class="mix category_1 gallery" data-cat="1">
+              <a href="images/portfolio/wholesome1.png" title="Logo Design for Wholesome Kitchen">
+                <img src="images/portfolio/wholesome-sm.png">
+              </a>
+              <a href="images/portfolio/wholesome2.png" title="Full Sign for Wholesome Kitchen"></a>
+            </li>
+
+            <li class="mix category_1 gallery" data-cat="1">
+              <a href="images/portfolio/cake1.jpg" title="Logo Badge for HappyHour Cupcakes">
+                <img src="images/portfolio/cake-sm.png">
+              </a>
+              <a href="images/portfolio/cake2.jpg" title="Color choices and overlays"></a>
+              <a href="images/portfolio/cake3.jpg" title="Black/White Sign for HappyHour Cupcakes"></a>
+            </li>
+
+            <li class="mix category_2 gallery" data-cat="2">
+              <a href="images/portfolio/hathi1.png" title="Logo Design for Hathi">
+                <img src="images/portfolio/hathi-sm.png">
+              </a>
+              <a href="images/portfolio/hathi2.png" title="Home page mockup for Hathi.us"></a>
+              <a href="images/portfolio/hathi3.png" title="Home page mockup for Hathi.us"></a>
+            </li>
+
+             <li class="mix category_2 gallery" data-cat="2">
+              <a href="images/portfolio/sourcecast1.png" title="Logo Design for Hathi">
+                <img src="images/portfolio/sourcecast-sm.png">
+              </a>
+              <a href="images/portfolio/sourcecast2.png" title="Home page mockup for Hathi.us"></a>
+              <a href="images/portfolio/sourcecast3.png" title="Home page mockup for Hathi.us"></a>
+            </li>
+
+            <li class="mix category_2 gallery" data-cat="2">
+              <a href="images/portfolio/xpand1.png" title="Home Page design for XPANDcorp.com">
+                <img src="images/portfolio/xpand-sm.png">
+              </a>
+              <a href="images/portfolio/xpand2.png" title="Contactu us page"></a>
+              <a href="images/portfolio/xpand3.png" title="Logo Design XPAND Cooperation"></a>
+            </li>
+
+            <li class="mix category_1 gallery" data-cat="1">
+              <a href="images/portfolio/assured1.png" title="Logo Design for Assured Compliance 1">
+                <img src="images/portfolio/assured-sm.png">
+              </a>
+              <a href="images/portfolio/assured2.png" title="Logo Design for Assured Compliance 2"></a>
+              <a href="images/portfolio/assured3.png" title="Logo Design for Assured Compliance 3" ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-page pt-page-4">
+      <div class="container">
+        <div class="sixteen columns center mbl">
+          <h1 class="remove-bottom supertitle2 big" style="margin-top: 40px">Keisha Hartley</h1>
+
+          <h1 class="remove-bottom supertitle2 init" style="margin-top: 40px;">KCH</h1>
+          <p class="small2">Keisha C. Hartley<p>
+        </div>
+
+        <div class="sixteen columns contact mtl">   
+          <h1 style="color:#fff;">Hiya! </h1>
+          <h2 style="color:#fff;">Call me: (424) 261-4278 </h2>
+          <h2 style="color:#fff;">Email me: Hartley99@gmail.com </h2>
+          <h2 style="color:#fff;">DM me: @kayhart </h2>
+
+          <a class="btn-custom btn-2 btn-2c pt-trigger mtl" data-animation="4" data-goto="1">Back</a> 
+        </div>
+      </div>
+    </div>
+    <div class="pt-page pt-page-5">
+        <h1><strong>Page 5</strong></h1>
+    </div>
+    <div class="pt-page pt-page-6">
+        <h1><strong>Page 6</strong></h1>
+    </div>
+
+</div>
+
+
+
+<!-- <div class="pt-message">
+    <p>Your browser does not support CSS animations.</p>
+</div> -->
+
+<!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+<script src="js/transition.js"></script>
 
 </body>
 </html>
-
