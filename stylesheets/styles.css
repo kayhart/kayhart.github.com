@@ -118,6 +118,16 @@ h1, h2, h3, h4, h5, h6 {
     height: 700px;
 	}
 
+	.pt-page.pt-page-2 {
+    overflow: auto !important;
+    height: 1000px;
+	}
+
+	.pt-page.pt-page-3 {
+    overflow: auto !important;
+    height: 1000px;
+	}
+
 	.pt-page.pt-page-4 {
     overflow: auto !important;
     height: 700px;
