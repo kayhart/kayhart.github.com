@@ -110,10 +110,14 @@ h1, h2, h3, h4, h5, h6 {
 
 	.pt-page.pt-page-1 {
     overflow: auto !important;
-    margin-top: -100px;
-    height: 1000px;
+    margin-top: -120px;
+    height: 700px;
 	}
 
+	.pt-page.pt-page-4 {
+    overflow: auto !important;
+    height: 700px;
+	}
 
 }
 
