@@ -19,6 +19,9 @@
 	margin-bottom: 30px;
 }
 
+.mbm {
+	margin-bottom: 20px;
+}
 
 .mbxl {
 	margin-bottom: 80px;
@@ -233,16 +236,19 @@ body {
 .pt-page-2 {
     background: #FFF;
     overflow: auto;
+    height:100%;
 }
 
 .pt-page-3 {
     background: #FFF;
     overflow: auto;
+    height:100%;
 }
 
 .pt-page-4 {
     background: #f29da1;
     overflow: auto;
+    height:100%;
 }
 
 .pt-page-5 {
