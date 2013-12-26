@@ -1,0 +1,625 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*== Variables == */
+/*== Mixins == */
+/*== Frame == */
+/* line 39, ../sass/screen.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 45, ../sass/screen.scss */
+body {
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.7em;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 54, ../sass/screen.scss */
+.mbs {
+  margin-bottom: 10px;
+}
+
+/* line 58, ../sass/screen.scss */
+.mbl {
+  margin-bottom: 50px;
+}
+
+/* line 62, ../sass/screen.scss */
+.mtl {
+  margin-top: 50px;
+}
+
+/* line 65, ../sass/screen.scss */
+.header {
+  margin: 0 0;
+}
+
+/* line 69, ../sass/screen.scss */
+.header .pure-menu {
+  padding: 0.5em;
+}
+
+/* line 74, ../sass/screen.scss */
+.header .pure-menu li a:hover,
+.header .pure-menu li a:focus {
+  background: none;
+  border: none;
+  color: #aaa;
+}
+
+/* line 80, ../sass/screen.scss */
+body .primary-button {
+  background: #db1818;
+  color: #fff;
+}
+
+/* line 85, ../sass/screen.scss */
+#portfolio {
+  margin-top: 100%;
+  position: absolute;
+}
+
+/* line 90, ../sass/screen.scss */
+#portfolio-button {
+  margin-top: 90%;
+  position: absolute;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+/* line 97, ../sass/screen.scss */
+#resume {
+  margin-top: 200%;
+  position: absolute;
+  padding: 0 2em;
+  max-width: 1000px;
+  margin-right: 50%;
+}
+
+/* line 107, ../sass/screen.scss */
+.zero {
+  margin-bottom: 0 !important;
+}
+
+/* line 111, ../sass/screen.scss */
+.zero-top {
+  margin-top: 0 !important;
+}
+
+/* line 115, ../sass/screen.scss */
+.photo-box, .text-box {
+  overflow: hidden;
+  position: relative;
+  height: 250px;
+}
+
+/* line 122, ../sass/screen.scss */
+.photo-box img {
+  min-height: 250px;
+  width: 100%;
+}
+
+/* line 127, ../sass/screen.scss */
+.photo-box aside {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1em 0.5em;
+  color: white;
+  width: 100%;
+  font-size: 80%;
+  text-align: right;
+}
+
+/* line 138, ../sass/screen.scss */
+.photo-box aside span {
+  color: #aaa;
+}
+
+/* line 142, ../sass/screen.scss */
+.photo-box aside span a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* line 148, ../sass/screen.scss */
+.portfolio {
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #2F2F2F;
+  margin-top: -1px;
+}
+
+/* line 156, ../sass/screen.scss */
+.footer {
+  color: #666;
+  text-align: center;
+  padding: 1em;
+  font-size: 80%;
+}
+
+@media (max-width: 767px) {
+  /* line 164, ../sass/screen.scss */
+  .photo-box, .text-box {
+    text-align: center;
+  }
+
+  /* line 168, ../sass/screen.scss */
+  .photo-box img {
+    width: 100%;
+  }
+
+  /* line 172, ../sass/screen.scss */
+  .text-box {
+    height: auto;
+  }
+}
+/*== Typography == */
+/* line 179, ../sass/screen.scss */
+.center {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+}
+
+/* line 183, ../sass/screen.scss */
+.content p {
+  margin-bottom: 25px;
+}
+
+/* line 187, ../sass/screen.scss */
+.name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  color: #231F20;
+}
+
+/* line 195, ../sass/screen.scss */
+.thin {
+  font-family: 'Wire One', sans-serif;
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+/* line 201, ../sass/screen.scss */
+.init {
+  display: none;
+}
+
+/* line 204, ../sass/screen.scss */
+.small {
+  display: none;
+}
+
+/* line 207, ../sass/screen.scss */
+.small2 {
+  display: none;
+}
+
+/* line 211, ../sass/screen.scss */
+.job {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* line 217, ../sass/screen.scss */
+.title {
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  /* line 222, ../sass/screen.scss */
+  .name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3em;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    color: #231F20;
+  }
+
+  /* line 230, ../sass/screen.scss */
+  .thin {
+    font-family: 'Wire One', sans-serif;
+    font-size: 2em;
+    margin-bottom: 50px;
+  }
+
+  /* line 236, ../sass/screen.scss */
+  .big {
+    display: none;
+  }
+
+  /* line 241, ../sass/screen.scss */
+  .init {
+    display: block;
+  }
+
+  /* line 245, ../sass/screen.scss */
+  .small {
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 7px;
+  }
+
+  /* line 252, ../sass/screen.scss */
+  .small2 {
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 7px;
+    color: #FFF;
+  }
+}
+/* line 261, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* line 265, ../sass/screen.scss */
+h1 {
+  font-size: 5em;
+}
+
+/* line 269, ../sass/screen.scss */
+h2 {
+  font-size: 3em;
+}
+
+/* line 273, ../sass/screen.scss */
+h3 {
+  font-size: 1.6em;
+}
+
+/* line 277, ../sass/screen.scss */
+h4 {
+  font-size: 1.4em;
+}
+
+/* line 281, ../sass/screen.scss */
+h4 {
+  font-size: 1.2em;
+}
+
+/* line 286, ../sass/screen.scss */
+strong {
+  font-weight: bold;
+}
+
+/*== Images == */
+/* line 293, ../sass/screen.scss */
+.smheart {
+  width: 30px;
+  margin-top: 40px;
+}
+
+/* --- Link configuration that contains the image and label ---*/
+/* line 300, ../sass/screen.scss */
+.viewport a {
+  display: block;
+  position: relative;
+}
+
+/* line 305, ../sass/screen.scss */
+.viewport a img {
+  position: relative;
+}
+
+/* --- Label configuration --- */
+/* line 310, ../sass/screen.scss */
+.viewport a span {
+  display: none;
+  font-size: 3.0em;
+  font-weight: bold;
+  height: 100%;
+  padding-top: 120px;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  z-index: 100;
+}
+
+/* --- Dark hover background ---*/
+/* line 325, ../sass/screen.scss */
+.dark-background {
+  background-color: rgba(15, 15, 15, 0.6);
+  color: #fff;
+  text-shadow: #000 0px 0px 20px;
+}
+
+/* line 332, ../sass/screen.scss */
+.plus {
+  font-family: Helvetica;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 6em;
+}
+
+/* line 340, ../sass/screen.scss */
+.logo {
+  width: 300px;
+  height: auto;
+}
+
+/* line 345, ../sass/screen.scss */
+.l-box {
+  padding: 1em;
+}
+
+/* line 349, ../sass/screen.scss */
+.rules .l-box img {
+  width: 150px;
+}
+
+/* line 353, ../sass/screen.scss */
+.floating {
+  -webkit-transform: translateY(-100%) scale(0.5);
+  -moz-transform: translateY(-100%) scale(0.5);
+  -ms-transform: translateY(-100%) scale(0.5);
+  -o-transform: translateY(-100%) scale(0.5);
+  transform: translateY(-100%) scale(0.5);
+}
+
+/* line 357, ../sass/screen.scss */
+.bigheart {
+  width: 120px;
+  margin-top: 160px;
+}
+
+/* line 363, ../sass/screen.scss */
+.oval {
+  width: 50px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 100px 50px;
+  -moz-border-radius: 100px / 50px;
+  border-radius: 100px / 50px;
+}
+
+/* === Fancybox ===*/
+/* line 372, ../sass/screen.scss */
+.fancybox-title-over-wrap {
+  width: 100%;
+  padding: 0;
+}
+
+/* line 377, ../sass/screen.scss */
+.fancybox-title-over-wrap > div {
+  padding: 10px;
+}
+
+/* line 381, ../sass/screen.scss */
+.hidden {
+  display: none;
+}
+
+/*== Tipsy - Tooltip == */
+/* ----- TOOLTIP ---- */
+/* line 389, ../sass/screen.scss */
+.tipsy {
+  font-size: 11px;
+  position: absolute;
+  padding: 5px;
+  z-index: 100000;
+}
+
+/* line 396, ../sass/screen.scss */
+.tipsy-inner {
+  background-color: #000;
+  color: #FFF;
+  font-family: Helvetica;
+  max-width: 200px;
+  padding: 5px 8px 4px 8px;
+  text-align: center;
+}
+
+/* Rounded corners */
+/* line 406, ../sass/screen.scss */
+.tipsy-inner {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* Uncomment for shadow */
+/*.tipsy-inner { box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }*/
+/* line 413, ../sass/screen.scss */
+.tipsy-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  border: 5px dashed #000;
+}
+
+/* Rules to colour arrows */
+/* line 422, ../sass/screen.scss */
+.tipsy-arrow-n {
+  border-bottom-color: #000;
+}
+
+/* line 426, ../sass/screen.scss */
+.tipsy-arrow-s {
+  border-top-color: #000;
+}
+
+/* line 430, ../sass/screen.scss */
+.tipsy-arrow-e {
+  border-left-color: #000;
+}
+
+/* line 434, ../sass/screen.scss */
+.tipsy-arrow-w {
+  border-right-color: #000;
+}
+
+/* line 438, ../sass/screen.scss */
+.tipsy-n .tipsy-arrow {
+  top: 0px;
+  left: 50%;
+  margin-left: -5px;
+  border-bottom-style: solid;
+  border-top: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+/* line 439, ../sass/screen.scss */
+.tipsy-nw .tipsy-arrow {
+  top: 0;
+  left: 10px;
+  border-bottom-style: solid;
+  border-top: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+/* line 440, ../sass/screen.scss */
+.tipsy-ne .tipsy-arrow {
+  top: 0;
+  right: 10px;
+  border-bottom-style: solid;
+  border-top: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+/* line 441, ../sass/screen.scss */
+.tipsy-s .tipsy-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-top-style: solid;
+  border-bottom: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+/* line 442, ../sass/screen.scss */
+.tipsy-sw .tipsy-arrow {
+  bottom: 0;
+  left: 10px;
+  border-top-style: solid;
+  border-bottom: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+/* line 443, ../sass/screen.scss */
+.tipsy-se .tipsy-arrow {
+  bottom: 0;
+  right: 10px;
+  border-top-style: solid;
+  border-bottom: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+/* line 444, ../sass/screen.scss */
+.tipsy-e .tipsy-arrow {
+  right: 0;
+  top: 50%;
+  margin-top: -5px;
+  border-left-style: solid;
+  border-right: none;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
+/* line 445, ../sass/screen.scss */
+.tipsy-w .tipsy-arrow {
+  left: 0;
+  top: 50%;
+  margin-top: -5px;
+  border-right-style: solid;
+  border-left: none;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
+/* line 447, ../sass/screen.scss */
+.tip {
+  cursor: pointer;
+}
