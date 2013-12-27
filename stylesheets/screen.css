@@ -167,47 +167,40 @@ body .primary-button {
   width: 100%;
 }
 
-/* line 129, ../sass/screen.scss */
-.photo-box aside {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 1em 0.5em;
-  color: white;
-  width: 100%;
-  font-size: 80%;
-  text-align: right;
-}
-
-/* line 140, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .photo-box aside span {
   color: #aaa;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .photo-box aside span a {
   color: #ccc;
   text-decoration: none;
 }
 
 @media (max-width: 767px) {
-  /* line 151, ../sass/screen.scss */
+  /* line 141, ../sass/screen.scss */
   .photo-box, .text-box {
     text-align: center;
   }
 
-  /* line 155, ../sass/screen.scss */
+  /* line 145, ../sass/screen.scss */
   .photo-box img {
     width: 100%;
   }
 
-  /* line 159, ../sass/screen.scss */
+  /* line 149, ../sass/screen.scss */
   .text-box {
     height: auto;
   }
 }
+/* line 154, ../sass/screen.scss */
+.wide {
+  background-size: cover;
+}
+
 /*== Typography == */
-/* line 166, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .center {
   padding: 0;
   margin-left: auto;
@@ -216,12 +209,12 @@ body .primary-button {
   display: block;
 }
 
-/* line 170, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .content p {
   margin-bottom: 25px;
 }
 
-/* line 174, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .name {
   font-family: 'Montserrat', sans-serif;
   font-size: 70px;
@@ -230,41 +223,41 @@ body .primary-button {
   color: #231F20;
 }
 
-/* line 182, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .thin {
   font-family: 'Wire One', sans-serif;
   font-size: 3em;
   margin-bottom: 50px;
 }
 
-/* line 188, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .init {
   display: none;
 }
 
-/* line 191, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .small {
   display: none;
 }
 
-/* line 194, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 .small2 {
   display: none;
 }
 
-/* line 198, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 .job {
   font-size: 15px;
   font-weight: bold;
   color: #000;
 }
 
-/* line 204, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .title {
   font-weight: bold;
 }
 
-/* line 208, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .personal li {
   font-size: 25px;
   display: inline-block;
@@ -275,7 +268,7 @@ body .primary-button {
   color: #302f2f;
 }
 
-/* line 218, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .personal a {
   color: #302f2f;
   -webkit-transition-duration: 0.4s;
@@ -283,13 +276,13 @@ body .primary-button {
   -o-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
-/* line 221, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .personal a:hover {
   color: #47d5e5;
 }
 
 @media (max-width: 767px) {
-  /* line 229, ../sass/screen.scss */
+  /* line 222, ../sass/screen.scss */
   .name {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.1em;
@@ -297,23 +290,23 @@ body .primary-button {
     color: #231F20;
   }
 
-  /* line 236, ../sass/screen.scss */
+  /* line 229, ../sass/screen.scss */
   .thin {
     font-family: 'Wire One', sans-serif;
     font-size: 1.8em;
   }
 
-  /* line 241, ../sass/screen.scss */
+  /* line 234, ../sass/screen.scss */
   .big {
     display: none;
   }
 
-  /* line 246, ../sass/screen.scss */
+  /* line 239, ../sass/screen.scss */
   .init {
     display: block;
   }
 
-  /* line 250, ../sass/screen.scss */
+  /* line 243, ../sass/screen.scss */
   .small {
     display: block;
     font-size: 20px;
@@ -321,7 +314,7 @@ body .primary-button {
     margin-left: 7px;
   }
 
-  /* line 257, ../sass/screen.scss */
+  /* line 250, ../sass/screen.scss */
   .small2 {
     display: block;
     font-size: 20px;
@@ -330,62 +323,62 @@ body .primary-button {
     color: #FFF;
   }
 }
-/* line 266, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* line 270, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 h1 {
   font-size: 5em;
 }
 
-/* line 274, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 h2 {
   font-size: 3em;
 }
 
-/* line 278, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 h3 {
   font-size: 1.6em;
 }
 
-/* line 282, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 h4 {
   font-size: 1.4em;
 }
 
-/* line 286, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 h4 {
   font-size: 1.2em;
 }
 
-/* line 291, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 strong {
   font-weight: bold;
 }
 
 /*== Images == */
-/* line 298, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .smheart {
   width: 30px;
   margin-top: 40px;
 }
 
 /* --- Link configuration that contains the image and label ---*/
-/* line 305, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .viewport a {
   display: block;
   position: relative;
 }
 
-/* line 310, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 .viewport a img {
   position: relative;
 }
 
 /* --- Label configuration --- */
-/* line 315, ../sass/screen.scss */
+/* line 308, ../sass/screen.scss */
 .viewport a span {
   display: none;
   font-size: 3.0em;
@@ -400,14 +393,14 @@ strong {
 }
 
 /* --- Dark hover background ---*/
-/* line 330, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 .dark-background {
   background-color: rgba(15, 15, 15, 0.6);
   color: #fff;
   text-shadow: #000 0px 0px 20px;
 }
 
-/* line 337, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 .plus {
   font-family: Helvetica;
   font-weight: 900;
@@ -415,23 +408,23 @@ strong {
   font-size: 6em;
 }
 
-/* line 345, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 .logo {
   width: 300px;
   height: auto;
 }
 
-/* line 350, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 .l-box {
   padding: 1em;
 }
 
-/* line 354, ../sass/screen.scss */
+/* line 347, ../sass/screen.scss */
 .rules .l-box img {
   width: 150px;
 }
 
-/* line 358, ../sass/screen.scss */
+/* line 351, ../sass/screen.scss */
 .floating {
   -webkit-transform: translateY(-100%) scale(0.5);
   -moz-transform: translateY(-100%) scale(0.5);
@@ -440,13 +433,13 @@ strong {
   transform: translateY(-100%) scale(0.5);
 }
 
-/* line 362, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 .bigheart {
   width: 120px;
   margin-top: 160px;
 }
 
-/* line 368, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 .oval {
   width: 50px;
   height: 20px;
@@ -457,25 +450,25 @@ strong {
 }
 
 /* === Fancybox ===*/
-/* line 377, ../sass/screen.scss */
+/* line 370, ../sass/screen.scss */
 .fancybox-title-over-wrap {
   width: 100%;
   padding: 0;
 }
 
-/* line 382, ../sass/screen.scss */
+/* line 375, ../sass/screen.scss */
 .fancybox-title-over-wrap > div {
   padding: 10px;
 }
 
-/* line 386, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 .hidden {
   display: none;
 }
 
 /*== Tipsy - Tooltip == */
 /* ----- TOOLTIP ---- */
-/* line 394, ../sass/screen.scss */
+/* line 387, ../sass/screen.scss */
 .tipsy {
   font-size: 11px;
   position: absolute;
@@ -483,7 +476,7 @@ strong {
   z-index: 100000;
 }
 
-/* line 401, ../sass/screen.scss */
+/* line 394, ../sass/screen.scss */
 .tipsy-inner {
   background-color: #000;
   color: #FFF;
@@ -494,7 +487,7 @@ strong {
 }
 
 /* Rounded corners */
-/* line 411, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 .tipsy-inner {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -505,7 +498,7 @@ strong {
 
 /* Uncomment for shadow */
 /*.tipsy-inner { box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }*/
-/* line 418, ../sass/screen.scss */
+/* line 411, ../sass/screen.scss */
 .tipsy-arrow {
   position: absolute;
   width: 0;
@@ -515,27 +508,27 @@ strong {
 }
 
 /* Rules to colour arrows */
-/* line 427, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 .tipsy-arrow-n {
   border-bottom-color: #000;
 }
 
-/* line 431, ../sass/screen.scss */
+/* line 424, ../sass/screen.scss */
 .tipsy-arrow-s {
   border-top-color: #000;
 }
 
-/* line 435, ../sass/screen.scss */
+/* line 428, ../sass/screen.scss */
 .tipsy-arrow-e {
   border-left-color: #000;
 }
 
-/* line 439, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 .tipsy-arrow-w {
   border-right-color: #000;
 }
 
-/* line 443, ../sass/screen.scss */
+/* line 436, ../sass/screen.scss */
 .tipsy-n .tipsy-arrow {
   top: 0px;
   left: 50%;
@@ -546,7 +539,7 @@ strong {
   border-right-color: transparent;
 }
 
-/* line 444, ../sass/screen.scss */
+/* line 437, ../sass/screen.scss */
 .tipsy-nw .tipsy-arrow {
   top: 0;
   left: 10px;
@@ -556,7 +549,7 @@ strong {
   border-right-color: transparent;
 }
 
-/* line 445, ../sass/screen.scss */
+/* line 438, ../sass/screen.scss */
 .tipsy-ne .tipsy-arrow {
   top: 0;
   right: 10px;
@@ -566,7 +559,7 @@ strong {
   border-right-color: transparent;
 }
 
-/* line 446, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 .tipsy-s .tipsy-arrow {
   bottom: 0;
   left: 50%;
@@ -577,7 +570,7 @@ strong {
   border-right-color: transparent;
 }
 
-/* line 447, ../sass/screen.scss */
+/* line 440, ../sass/screen.scss */
 .tipsy-sw .tipsy-arrow {
   bottom: 0;
   left: 10px;
@@ -587,7 +580,7 @@ strong {
   border-right-color: transparent;
 }
 
-/* line 448, ../sass/screen.scss */
+/* line 441, ../sass/screen.scss */
 .tipsy-se .tipsy-arrow {
   bottom: 0;
   right: 10px;
@@ -597,7 +590,7 @@ strong {
   border-right-color: transparent;
 }
 
-/* line 449, ../sass/screen.scss */
+/* line 442, ../sass/screen.scss */
 .tipsy-e .tipsy-arrow {
   right: 0;
   top: 50%;
@@ -608,7 +601,7 @@ strong {
   border-bottom-color: transparent;
 }
 
-/* line 450, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 .tipsy-w .tipsy-arrow {
   left: 0;
   top: 50%;
@@ -619,25 +612,25 @@ strong {
   border-bottom-color: transparent;
 }
 
-/* line 452, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 .tip {
   cursor: pointer;
 }
 
 /*==== PureCSS Overrides === */
-/* line 459, ../sass/screen.scss */
+/* line 452, ../sass/screen.scss */
 .pure-button {
   font-family: "Arial"  'sans-serif';
   font-weight: 200;
 }
 
-/* line 464, ../sass/screen.scss */
+/* line 457, ../sass/screen.scss */
 .snd-button {
   background-color: #02B1CA;
   color: white;
 }
 
-/* line 469, ../sass/screen.scss */
+/* line 462, ../sass/screen.scss */
 a {
   text-decoration: none;
 }
