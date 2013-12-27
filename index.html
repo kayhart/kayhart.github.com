@@ -1,90 +1,78 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>
-  <html class="ie ie8" lang="en"> 
-  <meta http-equiv="refresh" content="0;url=/ie.html">
-<![endif]-->
-<!--[if IE 9]>
-    <meta http-equiv="refresh" content="0;url=/ie.html">
-<![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<html>
+<html lang="en">
 
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-       <!-- Basic Page Needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Keisha Hartley</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="PureCSS">
+	<title>K.C.H PureCss</title>
 
-    <!-- Mobile Specific Metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="stylesheets/base.css">
-    <link rel="stylesheet" href="stylesheets/skeleton.css">
-    <link rel="stylesheet" href="stylesheets/layout.css">
-    <link rel="stylesheet" href="stylesheets/icon.css">
-    <link rel="stylesheet" href="stylesheets/animation.css"/>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700|Raleway:400,500,300,600,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!--[if !IE 7]>
-    <style type="text/css">
-      #wrap {display:table;height:100%}
-    </style>
-    <![endif]-->
-
-  <!-- Magnific -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js" type="text/javascript"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" /></script>
-  <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
-  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-  
-  <!-- Javascript
+   <!-- Stylesheet
   ================================================== -->
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css" media="screen, projection"/>
+  <link rel="stylesheet" type="text/css" href="stylesheets/icon.css">
+  <link href='http://fonts.googleapis.com/css?family=Wire+One|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- Favicons
+  ================================================== -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  
+   <!-- Javascript
+  ================================================== -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
   <script src="js/modernizr.custom.js"></script>
   <script type="text/javascript" src="js/jquery.tipsy.js"></script>
   <!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
 
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 
-   <!-- Favicons
-  ================================================== -->
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+  <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+  <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
 
-  <script type="text/javascript">  
-      $(function(){
-        $('#Grid').mixitup();
-      }); 
-  </script>
 
-
- 
   <script type="text/javascript">
-   $(document).ready(function() {
-      $('.gallery').each(function() { // the containers for all your galleries should have the class gallery
-      $(this).magnificPopup({
-          delegate: 'a', // the container for each your gallery items
-          type: 'image',
-          gallery:{enabled:true}
-      });
-    }); 
+  	$(document).ready(function() {
+  	$(".fancybox").fancybox({
+      padding : 0,
+      closeBtn: false,
+
+       helpers : {
+          title: {
+              type: 'outside'
+          }
+      }
+    });
   });
   </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('.viewport').mouseenter(function(e) {
+            $(this).children('a').children('img').animate({  left: '0', bottom: '0'}, 100);
+            $(this).children('a').children('span').fadeIn(200);
+        }).mouseleave(function(e) {
+            $(this).children('a').children('img').animate({ bottom: '0'}, 100);
+            $(this).children('a').children('span').fadeOut(200);
+        });
+    });
+  </script>
+
 
 </head>
 
@@ -107,52 +95,166 @@ else {
 </script>
 
 
-<div class="pt-wrapper">
-    <!--All Pages-->
+<div>
+  <div id="top">&nbsp;</div>
 
-    <div class="pt-page pt-page-1">
-        <div class="sixteen columns center"><img class="bigheart floating" src="images/Pixel-Hart1.png" alt="PixelHart"> </div>
-        <div class="oval center scaling"></div>
+    <div id="title" class="pure-u center title">
+      <h1 class="name mbl">KEISHA HARTLEY</h1>
+      
+      <h3 class="thin"> Pixel Wizard + Website Architect </h3>
 
-      <div class="sixteen columns center links">
-        <nav class="cl-effect-21" id="cl-effect-21">
-          <a class="pt-trigger" data-animation="36" data-goto="2">Resume</a>
-          <a class="pt-trigger" data-animation="2" data-goto="3">Portfolio</a>
-          <a class="pt-trigger" data-animation="3" data-goto="4">Contact</a>
-        </nav>
-      </div>
+      <ul class="personal">
+        <li> <a href="https://twitter.com/kayhart"><span aria-hidden="true" class="icon-twitter icos tip"></span></a> </li> 
+        <li> <a href="http://instagram.com/keisha_hart"><span aria-hidden="true" class="icon-instagram icos tip"></span></a> </li> 
+        <li> <a href="http://www.linkedin.com/pub/keisha-hartley/2a/498/5a3"><span aria-hidden="true" class="icon-linkedin icos tip"></span></a> </li>  
+      </ul>
+
+      <a href="#portfolio" class="pure-button primary-button">Portfolio</a>
     </div>
 
+<!-- Portfolio Section -->
+    <div id="portfolio" class="pure-g-r">
+        <div class="pure-u-2-3 photo-box viewport">
+        	<a class="fancybox" rel="gallery1" title="Home page mockup for Hathi.us" href="img/portfolio/hathi2.png">
+            <span class="dark-background plus">+</span>
+        		<img src="img/portfolio/hathi-sm.png" alt=""/>
+        	</a>
 
-    <div class="pt-page pt-page-2">
-      <div class="container">
-        <div class="sixteen columns">
-          <h1 class="remove-bottom supertitle big" style="margin-top: 40px">Keisha Hartley</h1>
-
-          <h1 class="remove-bottom supertitle init" style="margin-top: 40px;">KCH</h1>
-          <p class="small">Keisha C. Hartley<p>
-          <hr />
+					<div class="hidden">
+					    <a class="fancybox" rel="gallery1" title="Home page mockup for Hathi.us" href="img/portfolio/hathi3.png">
+					    	<img src="img/portfolio/hathi3.png" alt=""/>
+					    </a>
+					    
+					    <a class="fancybox" rel="gallery1" title="Logo Design for Hathi" href="img/portfolio/hathi1.png">
+					    	<img src="img/portfolio/hathi1.png" alt=""/>
+					    </a>
+					</div>
         </div>
 
-        <div class="sixteen columns">
+        <div class="pure-u-1-3 photo-box viewport">
+          <a class="fancybox" rel="gallery2" title="Logo Design for Wholesome Kitchen" href="img/portfolio/wholesome1.png">
+            <span class="dark-background plus">+</span>
+        		<img src="img/portfolio/wholesome-sm.png" alt=""/>
+        	</a>
+
+					<div class="hidden">
+					    <a class="fancybox" rel="gallery2" title="Logo Design for Wholesome Kitchen" href="img/portfolio/wholesome2.png">
+					    	<img src="img/portfolio/wholesome2png" alt=""/>
+					    </a>
+					</div>
+        </div>
+
+        <div class="pure-u-1-3 photo-box viewport">
+          <a class="fancybox" rel="gallery3" title="Logo Design for Assured Compliance 1" href="img/portfolio/assured1.png">
+            <span class="dark-background plus">+</span>
+        		<img src="img/portfolio/assured-sm.png" alt=""/>
+        	</a>
+
+					<div class="hidden">
+					    <a class="fancybox" rel="gallery3" title="Logo Design for Assured Compliance 2" href="img/portfolio/assured2.png">
+					    	<img src="img/portfolio/assured2.png" alt=""/>
+					    </a>
+					    
+					    <a class="fancybox" rel="gallery3" title="Logo Design for Assured Compliance Final" href="img/portfolio/assured3.png">
+					    	<img src="img/portfolio/assured3.png" alt=""/>
+					    </a>
+					</div>
+        </div>
+
+        <div class="pure-u-1-3 photo-box viewport">
+          <a class="fancybox" rel="gallery4" title="Half-Page Typography Flyer for New Castle Living" href="img/portfolio/newcastle1.png">
+            <span class="dark-background plus">+</span>
+            <img src="img/portfolio/newcastle-sm.png" alt=""/>
+          </a>
+
+          <div class="hidden">
+              <a class="fancybox" rel="gallery4" title="Alt Half-Page Typography Flyer for New Castle Living" href="img/portfolio/newcastle2.png">
+                <img src="img/portfolio/newcastle2.png" alt=""/>
+              </a>
+              
+              <a class="fancybox" rel="gallery4" title="New Castle Logo" href="img/portfolio/newcastle3.png">
+                <img src="img/portfolio/newcastle3.png" alt=""/>
+              </a>
+          </div>
+        </div>
+
+        <div class="pure-u-1-3 photo-box viewport">
+          <a class="fancybox" rel="gallery5" title="Alt Color HappyHour Cupcakes" href="img/portfolio/cake1.png">
+            <span class="dark-background plus">+</span>
+            <img src="img/portfolio/cake-sm.png" alt=""/>
+          </a>
+
+          <div class="hidden">
+              <a class="fancybox" rel="gallery5" title="Neon color concepts" href="img/portfolio/cake2.jpg">
+                <img src="img/portfolio/cake2.jpg" alt=""/>
+              </a>
+              
+              <a class="fancybox" rel="gallery5" title="Logo Badge for HappyHour Cupcakes" href="img/portfolio/cake3.png">
+                <img src="img/portfolio/cake3.png" alt=""/>
+              </a>
+          </div>
+        </div>
+
+
+        <div class="pure-u-1-3 photo-box viewport">
+          <a class="fancybox" rel="gallery6" title="Website mockup for LoveCage.com" href="img/portfolio/lovecage2.png">
+            <span class="dark-background plus">+</span>
+            <img src="img/portfolio/lovecage-sm.png" alt=""/>
+          </a>
+
+          <div class="hidden">
+              <a class="fancybox" rel="gallery6" title="Web Product Logo - Love Cage" href="img/portfolio/lovecage1.png">
+                <img src="img/portfolio/lovecage1.png" alt=""/>
+              </a>
+              
+              <a class="fancybox" rel="gallery6" title="Web Product Logo Alt- Love Cage" href="img/portfolio/lovecage3.png">
+                <img src="img/portfolio/lovecage3.png" alt=""/>
+              </a>
+          </div>
+        </div>
+
+        <div class="pure-u-2-3 photo-box viewport">
+          <a class="fancybox" rel="gallery7" title="Home Page design for XPANDcorp.com" href="img/portfolio/xpand1.png">
+            <span class="dark-background plus">+</span>
+            <img src="img/portfolio/xpand-sm.png" alt=""/>
+          </a>
+
+          <div class="hidden">
+              <a class="fancybox" rel="gallery7" title="Contact Us Page design for XPANDcorp.com" href="img/portfolio/xpand2.png">
+                <img src="img/portfolio/xpand3.png" alt=""/>
+              </a>
+              
+              <a class="fancybox" rel="gallery7" title="XPAND Logo design" href="img/portfolio/xpand3.png">
+                <img src="img/portfolio/xpand1.png" alt=""/>
+              </a>
+          </div>
+        </div>
+    </div>
+
+<!-- Resume Section -->
+
+  <!-- <div id="resume" class="pure-g-r">
+        <div class="pure-u mbs">
+          
+          <h2 class="center mtl mbl">RESUME</h2>
+
           <p>
-            <strong class="hi">Hello!</strong> As you can tell my name is Keisha. I'm a graphic designer / web developer. 
+            <strong>Hello!</strong> As you can tell my name is Keisha. I'm a graphic designer / web developer. 
             I've been in the force for about 6 years.
             I've done everything from web design to building corporate proposals. 
             My mission is to continue to grow and develop as an artist using my skills in all genres.
           </p>
 
-          <a class="btn-custom btn-2 btn-2c pt-trigger" data-animation="21" data-goto="1">Back</a>
-
         </div>
 
 
-        <div class="sixteen columns mts mbl">
-          <h2 class="title mtl remove-bottom"> Skills </h2> 
+        <div class="pure-u mbs">
+          <h3 class="title mtl remove-bottom"> Skills </h3> 
           <h5> "I don't have money. But what I do have are a very particular set of skills..."</h5>
         </div>
 
-        <div class="one-third column">
+      <div class="pure-g-r">
+        <div class="pure-u-1-3 ">
           <ul class="square">
             <li><strong>HTML / HTML5</strong>: Grizzled  veteran of the field back when putting layouts in tables was the "right" way to do it.</li>
             <li><strong>CSS / SASS</strong>: CSS is my first love, but she is a harsh mistress. Always changing but half the fun is keeping up.</li>
@@ -160,7 +262,7 @@ else {
           </ul>
         </div>
 
-        <div class="one-third column">
+        <div class="pure-u-1-3 ">
           <ul class="square">
             <li><strong>Photoshop</strong>: Staring and caring for images until my eyes bleed pixels.</li>
             <li><strong>Illustrator</strong>: Underrated I say! I love Illustrator and its sexy mathematical vectors.</li>
@@ -168,19 +270,19 @@ else {
           </ul>
         </div>
 
-        <div class="one-third column">
+        <div class="pure-u-1-3 ">
           <ul class="square">
             <li><strong>TFS - Visual Studio</strong>: It's never a fun thing when your coworker overwrites 24hrs worth of work is it?</li>
             <li><strong>GitHub</strong>: This website you're on is currently being hosted using GitHub. Shh..</li>
             <li><strong>Customer Support</strong>: From answering phones in college to teaching lovely old ladies how to send emails I've done tons of customer services.</li>
           </ul>
         </div>
-
+      </div>
 
         <hr>
 
-        <div class="fifteen columns">
-          <h2 class="title"> Experience </h2>
+        <div class="pure-u mbs">
+          <h3 class="title mbs"> Experience </h3>
 
           <h5>
             Web Developer
@@ -191,7 +293,7 @@ else {
           </h5> 
           
           <span class="job">Sourcecast, Inc.</span> <span>November 2012 – Present (1 year)Reston, VA </span>
-          <p class="mts">
+          <p class="mbs">
             To create visually appealing, functional website using HTML, CSS, JavaScript, and PHP, generating everything from home pages to site layout and function. Once a website is up and running, ensure that the site is cross-functional on desktop and mobile platforms, periodically testing and updating it as needed. Along side web development I create custom logos and designs for our products.
           </p>
 
@@ -202,7 +304,7 @@ else {
             <span aria-hidden="true" class="icon-rocket icos tip" rel="tipsy" title="Preformance Support"></span>
           </h5>
           <span class="job">Williams/Gerard Productions</span> <span>May 2012 – November 2012 (7 months)Arlington, VA</span>
-          <p class="mts">
+          <p class="mbs">
             In-house freelance position where I designed web, print and video proposals for prospective clients such as Yahoo!, Sanofi, &amp; Salvation Army. These proposals consist of our company’s capabilities & the potential possibilities we can provide to our clients. Along side designing these products I am responsible for Mac technical assistance as well as our web site maintenance.
           </p>
 
@@ -213,7 +315,7 @@ else {
             <span aria-hidden="true" class="icon-user icos tip" rel="tipsy" title="Client based"></span>       
           </h5>
           <span class="job">Apple</span> <span>June 2010 – June 2012 (2 years 1 month)</span>
-          <p class="mts">
+          <p class="mbs">
            To engage customers in a one of a kind experience that they wouldn't normally get when purchasing a computer. This includes teaching customers about Macs, providing solutions about transferring data from a PC to Mac, and preforming general hardware and technical assistance.
           </p>
 
@@ -224,148 +326,63 @@ else {
             <span aria-hidden="true" class="icon-stopwatch icos tip" rel="tipsy" title="Strict Deadlines"></span>
           </h5>
           <span class="job">DecisionStep, Inc.</span> <span>May 2008 – January 2009 (9 months) </span>
-          <p class="mts">
+          <p class="mbs">
             Providing quality graphic work ranging from web advertisements, magazine ads, concept work & website layouts. I also worked on designing logos and developing user interfaces for various technical enterprises. During my time with DecisionStep I worked primarily in Adobe InDesign and Photoshop I also developed front-end skills while work with HTML and CSS code. Currently, I have one ad published in a 2008 social media technology magazine.
           </p>
         </div>
 
-        <hr/>
-
-        <div class="fifteen columns">
-          <h2 class="title"> Education  </h2>
-          <span class="job">University of Maryland College Park</span> 
-          <p>Bachelor of Art (B.A.), Management Information Systems and Services 2006 - 2011</p>
+        <div class="pure-u">
+          <hr/>
         </div>
 
-        <div class="sixteen columns center pt-trigger"  data-animation="21" data-goto="1">
-          <img class="bigheart2 floating" src="images/Pixel-Hart1.png" alt="PixelHart"> 
-          <div class="oval2 center scaling"></div>
-        </div>
-        
-      </div>
-    </div>
-
-
-    <div class="pt-page pt-page-3">
-      <div class="container">
-        <div class="sixteen columns center mbl">
-          <h1 class="remove-bottom  white big" style="margin-top: 40px">Portfolio</h1>
-          <h1 class="remove-bottom white init" style="margin-top: 40px; margin-bottom:0px;">Portfolio</h1>
-
-          <a class="btn-custom center btn-2 btn-2c pt-trigger mbm" style="margin-top: 40px;" data-animation="1" data-goto="1">Back</a>
-        </div>
-
-
-        <div class="sixteen columns center">
-          <div class="controls center">  
-            <ul class="white">
-              <li class="filter" data-filter="all">Show All</li>
-              <li class="filter" data-filter="category_1">Logos</li>
-              <li class="filter" data-filter="category_2">Web Design</li>
-              <li class="filter" data-filter="category_1 category_2">Logos &amp; Web Design</li>
-            </ul>
+        <div class-"pure-g-r">
+          <div class="pure-u">
+            <h3 class="title"> Education  </h3>
+            <span class="job">University of Maryland College Park</span> 
+            <p>Bachelor of Art (B.A.), Management Information Systems and Services 2006 - 2011</p>
           </div>
-          
-        
-
-          <!-- GRID -->
-          
-          <ul id="Grid" class="sixteen columns center">
-            <li class="mix category_2 gallery" data-cat="2">
-              <a href="images/portfolio/lovecage1.png" title="Web Product Logo - Love Cage">
-                <img  class="prot" src="images/portfolio/lovecage-sm.png">
-              </a>
-              <a href="images/portfolio/lovecage2.png" title="Website mockup for LoveCage.com"></a>
-            </li>
-
-            <li class="mix category_1 gallery" data-cat="1">
-              <a href="images/portfolio/wholesome1.png" title="Logo Design for Wholesome Kitchen">
-                <img src="images/portfolio/wholesome-sm.png">
-              </a>
-              <a href="images/portfolio/wholesome2.png" title="Full Sign for Wholesome Kitchen"></a>
-            </li>
-
-            <li class="mix category_1 gallery" data-cat="1">
-              <a href="images/portfolio/cake1.jpg" title="Logo Badge for HappyHour Cupcakes">
-                <img src="images/portfolio/cake-sm.png">
-              </a>
-              <a href="images/portfolio/cake2.jpg" title="Color choices and overlays"></a>
-              <a href="images/portfolio/cake3.jpg" title="Black/White Sign for HappyHour Cupcakes"></a>
-            </li>
-
-            <li class="mix category_2 gallery" data-cat="2">
-              <a href="images/portfolio/hathi1.png" title="Logo Design for Hathi">
-                <img src="images/portfolio/hathi-sm.png">
-              </a>
-              <a href="images/portfolio/hathi2.png" title="Home page mockup for Hathi.us"></a>
-              <a href="images/portfolio/hathi3.png" title="Home page mockup for Hathi.us"></a>
-            </li>
-
-             <li class="mix category_2 gallery" data-cat="2">
-              <a href="images/portfolio/sourcecast1.png" title="Logo Design for Hathi">
-                <img src="images/portfolio/sourcecast-sm.png">
-              </a>
-              <a href="images/portfolio/sourcecast2.png" title="Home page mockup for Hathi.us"></a>
-              <a href="images/portfolio/sourcecast3.png" title="Home page mockup for Hathi.us"></a>
-            </li>
-
-            <li class="mix category_2 gallery" data-cat="2">
-              <a href="images/portfolio/xpand1.png" title="Home Page design for XPANDcorp.com">
-                <img src="images/portfolio/xpand-sm.png">
-              </a>
-              <a href="images/portfolio/xpand2.png" title="Contactu us page"></a>
-              <a href="images/portfolio/xpand3.png" title="Logo Design XPAND Cooperation"></a>
-            </li>
-
-            <li class="mix category_1 gallery" data-cat="1">
-              <a href="images/portfolio/assured1.png" title="Logo Design for Assured Compliance 1">
-                <img src="images/portfolio/assured-sm.png">
-              </a>
-              <a href="images/portfolio/assured2.png" title="Logo Design for Assured Compliance 2"></a>
-              <a href="images/portfolio/assured3.png" title="Logo Design for Assured Compliance 3" ></a>
-            </li>
-          </ul>
         </div>
-      </div>
-    </div>
-
-    <div class="pt-page pt-page-4">
-      <div class="container">
-        <div class="sixteen columns center mbl">
-          <h1 class="remove-bottom supertitle2 big" style="margin-top: 40px">Keisha Hartley</h1>
-
-          <h1 class="remove-bottom supertitle2 init" style="margin-top: 40px;">KCH</h1>
-          <p class="small2">Keisha C. Hartley<p>
-          <a class="btn-custom btn-2 btn-2c pt-trigger mtl mbl" data-animation="4" data-goto="1">Back</a> 
-        </div>
-
-        <div class="sixteen columns mts">   
-          <h1 style="color:#fff;">Hiya! </h1>
-          <h2 class="contact"> Call me:</h2> <h2>&#40;424&#41; 261-4278 </h2>
-          <h2 class="contact">Email me:</h2> <h2>Hartley99@gmail.com </h2>
-          <h2 class="contact">DM me:</h2>  <h2>@kayhart </h2>
-
-         
-        </div>
-      </div>
-    </div>
-    <div class="pt-page pt-page-5">
-        <h1><strong>Page 5</strong></h1>
-    </div>
-    <div class="pt-page pt-page-6">
-        <h1><strong>Page 6</strong></h1>
-    </div>
-
+  </div>   -->
 </div>
 
+<!-- Footer -->
+<div id="footer">
+  <p class="l-box">
+    <a href="#top" class="pure-button snd-button">Top</a>
+  </p>
+</div>
 
+	<script src="http://yui.yahooapis.com/3.12.0/build/yui/yui.js"></script>
 
-<!-- <div class="pt-message">
-    <p>Your browser does not support CSS animations.</p>
-</div> -->
+  
+  <script>
+  YUI().use('node-base', 'node-event-delegate', function (Y) {
+      // This just makes sure that the href="#" attached to the <a> elements
+      // don't scroll you back up the page.
+      Y.one('body').delegate('click', function (e) {
+          e.preventDefault();	
+      }, 'a[href="#"]');
+  });
+  </script>
 
-<!-- <script src="js/jquery-1.9.1.min.js"></script> -->
-<script src="js/transition.js"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
+
 
 </body>
 </html>
