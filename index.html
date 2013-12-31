@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css" media="screen, projection"/>
   <link rel="stylesheet" type="text/css" href="stylesheets/icon.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/modal.css">
   <link href='http://fonts.googleapis.com/css?family=Wire+One|Montserrat:400,700' rel='stylesheet' type='text/css'>
 
   <!-- Favicons
@@ -24,9 +25,8 @@
    <!-- Javascript
   ================================================== -->
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
   <script src="js/modernizr.custom.js"></script>
-  <script type="text/javascript" src="js/jquery.tipsy.js"></script>
+
   <!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
 
   <!-- Add mousewheel plugin (this is optional) -->
@@ -43,6 +43,7 @@
 
   <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
   <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
 
 
 
@@ -72,28 +73,9 @@
         });
     });
   </script>
-
-
 </head>
 
 <body>
-
-<script type='text/javascript'>
-
-if ($(window).width() > 600) {
-    $(function() {
-    $('span[rel=tipsy]').tipsy({fade: true, gravity: 'sw'});
- });
-}
-else {
-    $(function() {
-    $('span[rel=tipsy]').tipsy({fade: true, gravity: 's'});
-
- });
-}
-
-</script>
-
 
 <div>
   <div id="top">&nbsp;</div>
@@ -105,12 +87,32 @@ else {
 
       <div class="pure-g center">
       <ul class="personal">
+        <li id="modal"> <a href="#modal-text" data-toggle="modal"> <span aria-hidden="true" class="icon-info icos tip"></span></a> </li>
         <li> <a href="https://twitter.com/kayhart"><span aria-hidden="true" class="icon-twitter icos tip"></span></a> </li> 
         <li> <a href="http://instagram.com/keisha_hart"><span aria-hidden="true" class="icon-instagram icos tip"></span></a> </li> 
         <li> <a href="http://www.linkedin.com/pub/keisha-hartley/2a/498/5a3"><span aria-hidden="true" class="icon-linkedin icos tip"></span></a> </li>  
       </ul>
       </div>
-      <a href="#portfolio" class="pure-button primary-button">Portfolio</a>
+
+      <a href="#portfolio" class=" scroll pure-button primary-button">Portfolio</a>
+    
+      <!-- Modal Window -->
+      <section class="semantic-content popup" id="modal-text" tabindex="-1"
+        role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+
+          <div class="modal-inner">
+              <h3 id="modal-label" class="modal-header">Keisha Hartley </h3>
+              <div class="modal-content">
+                <ul>
+                  <li><h4> E: Hartley99@gmail.com </h4></li>
+                  <li><h4> P: (424) 261-4278 </h4></li>
+                <ul>
+              </div>
+              <footer></footer>
+          </div>
+
+          <a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">×</a>
+      </section>
     </div>
 
 <!-- Portfolio Section -->
@@ -243,162 +245,43 @@ else {
               </a>
           </div>
         </div>
-
-        
     </div>
 
-<!-- Resume Section -->
-
-  <!-- <div id="resume" class="pure-g-r">
-        <div class="pure-u mbs">
-          
-          <h2 class="center mtl mbl">RESUME</h2>
-
-          <p>
-            <strong>Hello!</strong> As you can tell my name is Keisha. I'm a graphic designer / web developer. 
-            I've been in the force for about 6 years.
-            I've done everything from web design to building corporate proposals. 
-            My mission is to continue to grow and develop as an artist using my skills in all genres.
-          </p>
-
-        </div>
-
-
-        <div class="pure-u mbs">
-          <h3 class="title mtl remove-bottom"> Skills </h3> 
-          <h5> "I don't have money. But what I do have are a very particular set of skills..."</h5>
-        </div>
-
-      <div class="pure-g-r">
-        <div class="pure-u-1-3 ">
-          <ul class="square">
-            <li><strong>HTML / HTML5</strong>: Grizzled  veteran of the field back when putting layouts in tables was the "right" way to do it.</li>
-            <li><strong>CSS / SASS</strong>: CSS is my first love, but she is a harsh mistress. Always changing but half the fun is keeping up.</li>
-            <li><strong>Jquery</strong>:I remember the days I used to run from Jquery but no longer. It has become an essential component  of my web design toolbox</li>
-          </ul>
-        </div>
-
-        <div class="pure-u-1-3 ">
-          <ul class="square">
-            <li><strong>Photoshop</strong>: Staring and caring for images until my eyes bleed pixels.</li>
-            <li><strong>Illustrator</strong>: Underrated I say! I love Illustrator and its sexy mathematical vectors.</li>
-            <li><strong>InDesign</strong>: Magazine, flyers and interactive PDF's are a few of the materials I've used InDesign for.</li>
-          </ul>
-        </div>
-
-        <div class="pure-u-1-3 ">
-          <ul class="square">
-            <li><strong>TFS - Visual Studio</strong>: It's never a fun thing when your coworker overwrites 24hrs worth of work is it?</li>
-            <li><strong>GitHub</strong>: This website you're on is currently being hosted using GitHub. Shh..</li>
-            <li><strong>Customer Support</strong>: From answering phones in college to teaching lovely old ladies how to send emails I've done tons of customer services.</li>
-          </ul>
-        </div>
-      </div>
-
-        <hr>
-
-        <div class="pure-u mbs">
-          <h3 class="title mbs"> Experience </h3>
-
-          <h5>
-            Web Developer
-            <span aria-hidden="true" class="icon-palette icos tip" rel="tipsy" title="Creative Brainstorming"></span>  
-            <span aria-hidden="true" class="icon-user icos tip" rel="tipsy" title="User Conscious Design"></span>
-            <span aria-hidden="true" class="icon-stopwatch icos tip" rel="tipsy" title="Strict Deadlines"></span>
-            <span aria-hidden="true" class="icon-mobile icos tip" rel="tipsy" title="Responsive Design"></span> 
-          </h5> 
-          
-          <span class="job">Sourcecast, Inc.</span> <span>November 2012 – Present (1 year)Reston, VA </span>
-          <p class="mbs">
-            To create visually appealing, functional website using HTML, CSS, JavaScript, and PHP, generating everything from home pages to site layout and function. Once a website is up and running, ensure that the site is cross-functional on desktop and mobile platforms, periodically testing and updating it as needed. Along side web development I create custom logos and designs for our products.
-          </p>
-
-          <h5>
-            Graphic Designer/Production Assistant 
-            <span aria-hidden="true" class="icon-stopwatch icos tip" rel="tipsy" title="Time-oriented"></span> 
-            <span aria-hidden="true" class="icon-user icos tip" rel="tipsy" title="Client based"></span>
-            <span aria-hidden="true" class="icon-rocket icos tip" rel="tipsy" title="Preformance Support"></span>
-          </h5>
-          <span class="job">Williams/Gerard Productions</span> <span>May 2012 – November 2012 (7 months)Arlington, VA</span>
-          <p class="mbs">
-            In-house freelance position where I designed web, print and video proposals for prospective clients such as Yahoo!, Sanofi, &amp; Salvation Army. These proposals consist of our company’s capabilities & the potential possibilities we can provide to our clients. Along side designing these products I am responsible for Mac technical assistance as well as our web site maintenance.
-          </p>
-
-          <h5>
-            Family Room Specialist
-            <span aria-hidden="true" class="icon-apple icos tip" rel="tipsy" title="Apple Certified"></span> 
-            <span aria-hidden="true" class="icon-stopwatch icos tip" rel="tipsy" title="Time-oriented"></span> 
-            <span aria-hidden="true" class="icon-user icos tip" rel="tipsy" title="Client based"></span>       
-          </h5>
-          <span class="job">Apple</span> <span>June 2010 – June 2012 (2 years 1 month)</span>
-          <p class="mbs">
-           To engage customers in a one of a kind experience that they wouldn't normally get when purchasing a computer. This includes teaching customers about Macs, providing solutions about transferring data from a PC to Mac, and preforming general hardware and technical assistance.
-          </p>
-
-          <h5>
-            Graphic Designer
-            <span aria-hidden="true" class="icon-palette icos tip" rel="tipsy" title="Creative Brainstorming"></span>  
-            <span aria-hidden="true" class="icon-user icos tip" rel="tipsy" title="User Conscious Design"></span>
-            <span aria-hidden="true" class="icon-stopwatch icos tip" rel="tipsy" title="Strict Deadlines"></span>
-          </h5>
-          <span class="job">DecisionStep, Inc.</span> <span>May 2008 – January 2009 (9 months) </span>
-          <p class="mbs">
-            Providing quality graphic work ranging from web advertisements, magazine ads, concept work & website layouts. I also worked on designing logos and developing user interfaces for various technical enterprises. During my time with DecisionStep I worked primarily in Adobe InDesign and Photoshop I also developed front-end skills while work with HTML and CSS code. Currently, I have one ad published in a 2008 social media technology magazine.
-          </p>
-        </div>
-
-        <div class="pure-u">
-          <hr/>
-        </div>
-
-        <div class-"pure-g-r">
-          <div class="pure-u">
-            <h3 class="title"> Education  </h3>
-            <span class="job">University of Maryland College Park</span> 
-            <p>Bachelor of Art (B.A.), Management Information Systems and Services 2006 - 2011</p>
-          </div>
-        </div>
-  </div>   -->
 </div>
 
 <!-- Footer -->
 <div id="footer">
   <p class="l-box">
-    <a href="#top" class="pure-button snd-button">Top</a>
+    <a href="#top" class=" scroll pure-button snd-button">Top</a>
   </p>
 </div>
+  
+
 
 	<script src="http://yui.yahooapis.com/3.12.0/build/yui/yui.js"></script>
 
-  
   <script>
   YUI().use('node-base', 'node-event-delegate', function (Y) {
       // This just makes sure that the href="#" attached to the <a> elements
       // don't scroll you back up the page.
       Y.one('body').delegate('click', function (e) {
-          e.preventDefault();	
+          e.preventDefault(); 
       }, 'a[href="#"]');
   });
   </script>
 
-  
   <script type="text/javascript">
-  $(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-          return false;
-        }
-      }
+    $(".scroll").click(function(event){     
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
     });
-  });
   </script>
+  
 
+
+
+
+  <script src="js/modal.js"></script>
 
 </body>
 </html>
