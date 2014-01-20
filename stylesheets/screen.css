@@ -617,63 +617,69 @@ body .primary-button {
     margin-left: 7px;
     color: #FFF;
   }
+
+  /* line 271, ../sass/screen.scss */
+  .personal li {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
 }
-/* line 272, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* line 276, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 h1 {
   font-size: 5em;
 }
 
-/* line 280, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 h2 {
   font-size: 3em;
 }
 
-/* line 284, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 h3 {
   font-size: 1.6em;
 }
 
-/* line 288, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 h4 {
   font-size: 1.4em;
 }
 
-/* line 292, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 h4 {
   font-size: 1.2em;
 }
 
-/* line 297, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 strong {
   font-weight: bold;
 }
 
 /*== Images == */
-/* line 304, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 .smheart {
   width: 30px;
   margin-top: 40px;
 }
 
 /* --- Link configuration that contains the image and label ---*/
-/* line 311, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 .viewport a {
   display: block;
   position: relative;
 }
 
-/* line 316, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 .viewport a img {
   position: relative;
 }
 
 /* --- Label configuration --- */
-/* line 321, ../sass/screen.scss */
+/* line 326, ../sass/screen.scss */
 .viewport a span {
   display: none;
   font-size: 3.0em;
@@ -688,14 +694,14 @@ strong {
 }
 
 /* --- Dark hover background ---*/
-/* line 336, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 .dark-background {
   background-color: rgba(15, 15, 15, 0.6);
   color: #fff;
   text-shadow: #000 0px 0px 20px;
 }
 
-/* line 343, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 .plus {
   font-family: Helvetica;
   font-weight: 900;
@@ -703,23 +709,23 @@ strong {
   font-size: 6em;
 }
 
-/* line 351, ../sass/screen.scss */
+/* line 356, ../sass/screen.scss */
 .logo {
   width: 300px;
   height: auto;
 }
 
-/* line 356, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 .l-box {
   padding: 1em;
 }
 
-/* line 360, ../sass/screen.scss */
+/* line 365, ../sass/screen.scss */
 .rules .l-box img {
   width: 150px;
 }
 
-/* line 364, ../sass/screen.scss */
+/* line 369, ../sass/screen.scss */
 .floating {
   -webkit-transform: translateY(-100%) scale(0.5);
   -moz-transform: translateY(-100%) scale(0.5);
@@ -728,13 +734,13 @@ strong {
   transform: translateY(-100%) scale(0.5);
 }
 
-/* line 368, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
 .bigheart {
   width: 120px;
   margin-top: 160px;
 }
 
-/* line 374, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 .oval {
   width: 50px;
   height: 20px;
@@ -745,25 +751,25 @@ strong {
 }
 
 /* === Fancybox ===*/
-/* line 383, ../sass/screen.scss */
+/* line 388, ../sass/screen.scss */
 .fancybox-title-over-wrap {
   width: 100%;
   padding: 0;
 }
 
-/* line 388, ../sass/screen.scss */
+/* line 393, ../sass/screen.scss */
 .fancybox-title-over-wrap > div {
   padding: 10px;
 }
 
-/* line 392, ../sass/screen.scss */
+/* line 397, ../sass/screen.scss */
 .hidden {
   display: none;
 }
 
 /*== Tipsy - Tooltip == */
 /* ----- TOOLTIP ---- */
-/* line 400, ../sass/screen.scss */
+/* line 405, ../sass/screen.scss */
 .tipsy {
   font-size: 11px;
   position: absolute;
@@ -771,7 +777,7 @@ strong {
   z-index: 100000;
 }
 
-/* line 407, ../sass/screen.scss */
+/* line 412, ../sass/screen.scss */
 .tipsy-inner {
   background-color: #000;
   color: #FFF;
@@ -782,7 +788,7 @@ strong {
 }
 
 /* Rounded corners */
-/* line 417, ../sass/screen.scss */
+/* line 422, ../sass/screen.scss */
 .tipsy-inner {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -793,7 +799,7 @@ strong {
 
 /* Uncomment for shadow */
 /*.tipsy-inner { box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }*/
-/* line 424, ../sass/screen.scss */
+/* line 429, ../sass/screen.scss */
 .tipsy-arrow {
   position: absolute;
   width: 0;
@@ -803,27 +809,27 @@ strong {
 }
 
 /* Rules to colour arrows */
-/* line 433, ../sass/screen.scss */
+/* line 438, ../sass/screen.scss */
 .tipsy-arrow-n {
   border-bottom-color: #000;
 }
 
-/* line 437, ../sass/screen.scss */
+/* line 442, ../sass/screen.scss */
 .tipsy-arrow-s {
   border-top-color: #000;
 }
 
-/* line 441, ../sass/screen.scss */
+/* line 446, ../sass/screen.scss */
 .tipsy-arrow-e {
   border-left-color: #000;
 }
 
-/* line 445, ../sass/screen.scss */
+/* line 450, ../sass/screen.scss */
 .tipsy-arrow-w {
   border-right-color: #000;
 }
 
-/* line 449, ../sass/screen.scss */
+/* line 454, ../sass/screen.scss */
 .tipsy-n .tipsy-arrow {
   top: 0px;
   left: 50%;
@@ -834,7 +840,7 @@ strong {
   border-right-color: transparent;
 }
 
-/* line 450, ../sass/screen.scss */
+/* line 455, ../sass/screen.scss */
 .tipsy-nw .tipsy-arrow {
   top: 0;
   left: 10px;
@@ -844,7 +850,7 @@ strong {
   border-right-color: transparent;
 }
 
-/* line 451, ../sass/screen.scss */
+/* line 456, ../sass/screen.scss */
 .tipsy-ne .tipsy-arrow {
   top: 0;
   right: 10px;
@@ -854,7 +860,7 @@ strong {
   border-right-color: transparent;
 }
 
-/* line 452, ../sass/screen.scss */
+/* line 457, ../sass/screen.scss */
 .tipsy-s .tipsy-arrow {
   bottom: 0;
   left: 50%;
@@ -865,7 +871,7 @@ strong {
   border-right-color: transparent;
 }
 
-/* line 453, ../sass/screen.scss */
+/* line 458, ../sass/screen.scss */
 .tipsy-sw .tipsy-arrow {
   bottom: 0;
   left: 10px;
@@ -875,7 +881,7 @@ strong {
   border-right-color: transparent;
 }
 
-/* line 454, ../sass/screen.scss */
+/* line 459, ../sass/screen.scss */
 .tipsy-se .tipsy-arrow {
   bottom: 0;
   right: 10px;
@@ -885,7 +891,7 @@ strong {
   border-right-color: transparent;
 }
 
-/* line 455, ../sass/screen.scss */
+/* line 460, ../sass/screen.scss */
 .tipsy-e .tipsy-arrow {
   right: 0;
   top: 50%;
@@ -896,7 +902,7 @@ strong {
   border-bottom-color: transparent;
 }
 
-/* line 456, ../sass/screen.scss */
+/* line 461, ../sass/screen.scss */
 .tipsy-w .tipsy-arrow {
   left: 0;
   top: 50%;
@@ -907,25 +913,25 @@ strong {
   border-bottom-color: transparent;
 }
 
-/* line 458, ../sass/screen.scss */
+/* line 463, ../sass/screen.scss */
 .tip {
   cursor: pointer;
 }
 
 /*==== PureCSS Overrides === */
-/* line 465, ../sass/screen.scss */
+/* line 470, ../sass/screen.scss */
 .pure-button {
   font-family: "Arial"  'sans-serif';
   font-weight: 200;
 }
 
-/* line 470, ../sass/screen.scss */
+/* line 475, ../sass/screen.scss */
 .snd-button {
   background-color: #02B1CA;
   color: white;
 }
 
-/* line 475, ../sass/screen.scss */
+/* line 480, ../sass/screen.scss */
 a {
   text-decoration: none;
 }
