@@ -1,324 +1,309 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="de"> <!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="PureCSS">
+	<title>Keisha Hartley - Portfolio</title>
 
-<!-- scaling not possible (for smartphones, ipad, etc.) -->
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+   <!-- Stylesheet
+  ================================================== -->
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css" media="screen, projection"/>
+  <link rel="stylesheet" type="text/css" href="stylesheets/icon.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/modal.css">
+  <link href='http://fonts.googleapis.com/css?family=Wire+One|Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-<title>Home</title>
+  <!-- Favicons
+  ================================================== -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  
+   <!-- Javascript
+  ================================================== -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/modernizr.custom.js"></script>
 
-<link href="files/css/fonts.css" rel="stylesheet" type="text/css" />
-<link href="files/css/style.css" rel="stylesheet" type="text/css" />
-<link href="files/css/isotope.css" rel="stylesheet" type="text/css" />
-<link href="files/css/mqueries.css" rel="stylesheet" type="text/css" media="screen" />
+  <!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
 
-<script src="files/js/jquery.modernizr.min.js"></script>
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+  <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+  <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+
+
+
+  <script type="text/javascript">
+  	$(document).ready(function() {
+  	$(".fancybox").fancybox({
+      padding : 0,
+      closeBtn: false,
+
+       helpers : {
+          title: {
+              type: 'outside'
+          }
+      }
+    });
+  });
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('.viewport').mouseenter(function(e) {
+            $(this).children('a').children('img').animate({  left: '0', bottom: '0'}, 100);
+            $(this).children('a').children('span').fadeIn(200);
+        }).mouseleave(function(e) {
+            $(this).children('a').children('img').animate({ bottom: '0'}, 100);
+            $(this).children('a').children('span').fadeOut(200);
+        });
+    });
+  </script>
 </head>
+
 <body>
-<div id="page">
 
-<section id="top">
-    <div class="top_inner wrapper clearfix">
-            
-            <div class="widget left_float">
-            	<h6>Keisha C. Hartley</h6>			
-                <div class="textwidget">PORTFOLIO</div>
-			</div>                
-            
-            <div class="socialmedia right_float" >
-            	<a class="twitter" href="http://twitter.com/kayhart" target="_blank">Twitter</a>
-                <!--<a class="facebook" href="index.html" target="_blank">Facebook</a>
-		<a class="dribbble" href="index.html" target="_blank">Dribbble</a> 
-                <a class="vimeo" href="index.html" target="_blank">Vimeo</a>
-                <a class="flickr" href="index.html" target="_blank">Flickr</a>
-                <a class="behance" href="index.html" target="_blank">Behance</a>
-                <a class="forrst" href="index.html" target="_blank">Forrst</a> -->
-			</div>
-        
+<div>
+  <div id="top">&nbsp;</div>
+
+    <div id="title" class="pure-u center title">
+      <h1 class="name mbl">KEISHA HARTLEY</h1>
+      
+      <h3 class="thin"> Pixel Wizard + Website Architect </h3>
+
+      <div class="pure-g center">
+      <ul class="personal">
+        <li id="modal"> <a href="#modal-text" data-toggle="modal"> <span aria-hidden="true" class="icon-info icos tip"></span></a> </li>
+        <li> <a href="https://twitter.com/kayhart"><span aria-hidden="true" class="icon-twitter icos tip"></span></a> </li> 
+        <li> <a href="http://instagram.com/keisha_hart"><span aria-hidden="true" class="icon-instagram icos tip"></span></a> </li> 
+        <li> <a href="http://www.linkedin.com/pub/keisha-hartley/2a/498/5a3"><span aria-hidden="true" class="icon-linkedin icos tip"></span></a> </li>  
+      </ul>
+      </div>
+
+      <a href="#portfolio" class=" scroll pure-button primary-button">Portfolio</a>
+    
+      <!-- Modal Window -->
+      <section class="semantic-content popup" id="modal-text" tabindex="-1"
+        role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+
+          <div class="modal-inner">
+              <h3 id="modal-label" class="modal-header">Keisha Hartley </h3>
+              <div class="modal-content">
+                <ul>
+                  <li><h4> E: Hartley99@gmail.com </h4></li>
+                  <li><h4> P: (424) 261-4278 </h4></li>
+                <ul>
+              </div>
+              <footer></footer>
+          </div>
+
+          <a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">×</a>
+      </section>
     </div>
-</section> <!-- END top -->
 
+<!-- Portfolio Section -->
+    <div id="portfolio" class="pure-g-r">
+        <div class="pure-u-2-3 photo-box viewport">
+        	<a class="fancybox" rel="gallery1" title="Home page mockup for Hathi.us" href="img/portfolio/hathi2.png">
+            <span class="dark-background plus">+</span>
+        		<img src="img/portfolio/hathi-sm.png" alt=""/>
+        	</a>
 
-<header id="header" class="wrapper">
-	
-    <div class="header_top clearfix">
-    	<div id="logo" class="left_float">
-            <a class="logotype" href="index.html"><img src="files/images/logo.png" alt="Logotype"></a>
+					<div class="hidden">
+					    <a class="fancybox" rel="gallery1" title="Home page mockup for Hathi.us" href="img/portfolio/hathi3.png">
+					    	<img src="img/portfolio/hathi3.png" alt=""/>
+					    </a>
+					    
+					    <a class="fancybox" rel="gallery1" title="Logo Design for Hathi" href="img/portfolio/hathi1.png">
+					    	<img src="img/portfolio/hathi1.png" alt=""/>
+					    </a>
+					</div>
         </div>
-        
-        <nav id="nav" class="right_float">
-            <ul>
-                <li><a href="about.html"  class="loadcontent" rel="about">About</a></li> <!-- class="loadcontent" will make it on the home page -->
-                <!--<li><a href="blog-post01.html" class="loadcontent" rel="contact">Hungry?</a></li> -->
-            </ul>
-        </nav>
-        
-    </div>
-    
-    <div class="header_tagline">
-    
-    <h1>Me</h1>
-    <h3>Graphic Artist, Baking Junkie, & Coffee Lover</h3>
-    
-    </div>
-    	
-     
-    
-    <div id="loader">
-        <img src="files/images/loader.gif" alt="loader" title="Ajax loader" />
-    </div>
-    
-    <div id="close">
-    	<a href="">close</a>
-    </div>
- 	
-</header>
 
+        <div class="pure-u-1-3 photo-box viewport">
+          <a class="fancybox" rel="gallery2" title="Logo Design for Wholesome Kitchen" href="img/portfolio/wholesome1.png">
+            <span class="dark-background plus">+</span>
+        		<img src="img/portfolio/wholesome-sm.png" alt=""/>
+        	</a>
 
-     
-<!-- ALL CONTENT WILL BE LOADED IN THIS AREA  -->    
-<section id="pagecontent">
-    <div id="pageloader">        
-            <!-- THE LOADED CONTENT WILL SHOW HERE -->
-    </div> <!-- END #pageloader -->
-</section>    
-<!-- ALL CONTENT WILL BE LOADED IN THIS AREA -->  
-<section id="main">
-    <div class="main_inner wrapper clearfix">
-        
-        <ul class="filter">
-            <li><a class="active" href="" data-option-value="*">All</a></li>
-            <li><a href="" data-option-value=".traditional">Traditional</a></li>
-            <li><a href="" data-option-value=".marketing">Marketing</a></li>
-            <li><a href="" data-option-value=".web">Web</a></li>
-            <li><a href="" data-option-value=".print">Print</a></li>
-        </ul>
-        
-        
-        <div id="masonry" class="entries clearfix">
-                                
-                <div class="masonry_item entry web">
-                    <div class="img_holder">
-                            <a href="portfolio-work01.html" rel="TexasInteractive" class="loadcontent"><img src="files/images/portfolio/work_01.jpg" alt="Portfolio Work 01"/></a>
-                        </div>
-                        
-                    <div class="entry-headline">
-                        <div class="entry-title"><h5><a href="portfolio-work01.html" rel="TexasInteractive" class="loadcontent">Interactive PDF</a></h5></div>
-                        <div class="entry-date">July 27</div>
-                    </div>
-                        
-                    <div class="entry-info">
-                        <p>
-                            Interactive PDF proposal for Texas State Society.
-                        </p>
-                        
-                    
-                    </div>
-                </div>
-
-                
-                <div class="masonry_item entry print">
-                    <div class="img_holder">
-                            <a href="portfolio-work02.html" rel="TexasBook" class="loadcontent"><img src="files/images/portfolio/work_04.jpg" alt="Portfolio Work 04"/></a>
-                        </div>
-                        
-                    <div class="entry-headline">
-                        <div class="entry-title"><h5><a href="portfolio-work02.html" rel="TexasBook" class="loadcontent">Black Tie & Boots</a></h5></div>
-                        <div class="entry-date">July 27</div>
-                    </div>
-                        
-                    <div class="entry-info">
-                        <p>
-                            Printed booklet for Black Tie & Boots Inaugural Ball.
-                        </p>
-                        
-                    
-                    </div>
-                </div>
-		
-		<div class="masonry_item entry traditional">
-                    <div class="img_holder">
-                            <a href="portfolio-work03.html" rel="Skin" class="loadcontent"><img src="files/images/portfolio/work_07.jpg" alt="Portfolio Work 07"/></a>
-                        </div>
-                        
-                    <div class="entry-headline">
-                        <div class="entry-title"><h5><a href="portfolio-work03.html" rel="Skin" class="loadcontent">Under My Skin</a></h5></div>
-                        <div class="entry-date">April 20</div>
-                    </div>
-                        
-                    <div class="entry-info">
-                        <p>
-                            Mock tattoo design from the drawing off the canvas project.
-                        </p>
-                    
-		    </div>
-                </div>
-		
-		<div class="masonry_item entry traditional">
-                    <div class="img_holder">
-                            <a href="portfolio-work04.html" rel="Cherry" class="loadcontent"><img src="files/images/portfolio/work_10.jpg" alt="Portfolio Work 07"/></a>
-                        </div>
-                        
-                    <div class="entry-headline">
-                        <div class="entry-title"><h5><a href="portfolio-work04.html" rel="Cherry" class="loadcontent">Morning Cherry</a></h5></div>
-                        <div class="entry-date">April 15</div>
-                    </div>
-                        
-                    <div class="entry-info">
-                        <p>
-                            Commissioned photos of cherry tree
-                        </p>
-                    
-		    </div>
-                </div>
-		
-		<div class="masonry_item entry marketing web">
-                    <div class="img_holder">
-                            <a href="portfolio-work06.html" rel="Green" class="loadcontent"><img src="files/images/portfolio/work_16.jpg" alt="Portfolio Work 16"/></a>
-                        </div>
-                        
-                    <div class="entry-headline">
-                        <div class="entry-title"><h5><a href="portfolio-work06.html" rel="Green" class="loadcontent">Sustainability in AV</a></h5></div>
-                        <div class="entry-date">August 25</div>
-                    </div>
-                        
-                    <div class="entry-info">
-                        <p>
-                            Keynote presentation focusing on how to be sustainable with show site production.
-                        </p>
-                    
-		    </div>
-                </div>
-                
-		<div class="masonry_item entry print marketing">
-                    <div class="img_holder">
-                            <a href="portfolio-work05.html" rel="Mag" class="loadcontent"><img src="files/images/portfolio/work_13.jpg" alt="Portfolio Work 13"/></a>
-                        </div>
-                        
-                    <div class="entry-headline">
-                        <div class="entry-title"><h5><a href="portfolio-work05.html" rel="Mag" class="loadcontent">Magazine Layout Design</a></h5></div>
-                        <div class="entry-date">December 29</div>
-                    </div>
-                        
-                    <div class="entry-info">
-                        <p>
-                            Assignment centered around developing a mock magazine.
-                        </p>
-                    
-		    </div>
-                </div>
-		
-		
-		<div class="masonry_item entry print marketing">
-                    <div class="img_holder">
-                            <a href="portfolio-work07.html" rel="Cake" class="loadcontent"><img src="files/images/portfolio/work_19.jpg" alt="Portfolio Work 19"/></a>
-                        </div>
-                        
-                    <div class="entry-headline">
-                        <div class="entry-title"><h5><a href="portfolio-work07.html" rel="Cake" class="loadcontent">Happy Hour Cupcake Co</a></h5></div>
-                        <div class="entry-date">July 29</div>
-                    </div>
-                        
-                    <div class="entry-info">
-                        <p>
-                            Branding design for a small cupcake business.
-                        </p>
-                    
-		    </div>
-                </div>
-		
-		<div class="masonry_item entry marketing">
-                    <div class="img_holder">
-                            <a href="portfolio-work08.html" rel="Bell" class="loadcontent"><img src="files/images/portfolio/work_22.jpg" alt="Portfolio Work 22"/></a>
-                        </div>
-                        
-                    <div class="entry-headline">
-                        <div class="entry-title"><h5><a href="portfolio-work08.html" rel="Bell" class="loadcontent">Julian Bell T-Shirt</a></h5></div>
-                        <div class="entry-date">August 4</div>
-                    </div>
-                        
-                    <div class="entry-info">
-                        <p>
-                            T-Shirt design for local Chicago musician.
-                        </p>
-                    
-		    </div>
-                </div>
-		
-		<div class="masonry_item entry traditional">
-                    <div class="img_holder">
-                            <a href="portfolio-work09.html" rel="Pick" class="loadcontent"><img src="files/images/portfolio/work_25.jpg" alt="Portfolio Work 25"/></a>
-                        </div>
-                        
-                    <div class="entry-headline">
-                        <div class="entry-title"><h5><a href="portfolio-work09.html" rel="Pick" class="loadcontent">Custom Guitar Pick</a></h5></div>
-                        <div class="entry-date">March 16</div>
-                    </div>
-                        
-                    <div class="entry-info">
-                        <p>
-                            Custom Pick design for local Baltimore musician.
-                        </p>
-                    
-		    </div>
-                </div>
-		
-            </div><!-- END #masonry -->
-	</div>       
-</section> <!-- END #content -->
-    
-<footer id="footer">
-	<div class="footer_inner wrapper clearfix">
-        <!-- <div class="left_float">Copyright © 2012 K.C.H. All rights reserved</div>  -->
-	</div>           
-</footer> <!-- END #footer -->
-
-<!-- Fancy Bottom Widget
-<section id="bottom">
-	<div id="slideup">
-    	<a href="" class="">bottom</a>
-    </div>
-    
-	<div class="bottom_inner">
-        <div class="wrapper clearfix">
-        	<div class="column one_third">
-            	<h4>Text Widget</h4>
-                <p>
-                Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. 
-                </p>
-            </div>
-            <div class="column one_third">
-            	<h4>Text Widget</h4>
-                <p>
-                Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. 
-                </p>
-            </div>
-            <div class="column one_third last">
-            	<h4>Text Widget</h4>
-                <p>
-                Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. 
-                </p>
-            </div>
+					<div class="hidden">
+					    <a class="fancybox" rel="gallery2" title="Logo Design for Wholesome Kitchen" href="img/portfolio/wholesome2.png">
+					    	<img src="img/portfolio/wholesome2png" alt=""/>
+					    </a>
+					</div>
         </div>
+
+        <div class="pure-u-1-3 photo-box viewport">
+          <a class="fancybox" rel="gallery3" title="Logo Design for Assured Compliance 1" href="img/portfolio/assured1.png">
+            <span class="dark-background plus">+</span>
+        		<img src="img/portfolio/assured-sm.png" alt=""/>
+        	</a>
+
+					<div class="hidden">
+					    <a class="fancybox" rel="gallery3" title="Logo Design for Assured Compliance 2" href="img/portfolio/assured2.png">
+					    	<img src="img/portfolio/assured2.png" alt=""/>
+					    </a>
+					    
+					    <a class="fancybox" rel="gallery3" title="Logo Design for Assured Compliance Final" href="img/portfolio/assured3.png">
+					    	<img src="img/portfolio/assured3.png" alt=""/>
+					    </a>
+					</div>
+        </div>
+
+        <div class="pure-u-1-3 photo-box viewport">
+          <a class="fancybox" rel="gallery4" title="Half-Page Typography Flyer for New Castle Living" href="img/portfolio/newcastle1.png">
+            <span class="dark-background plus">+</span>
+            <img src="img/portfolio/newcastle-sm.png" alt=""/>
+          </a>
+
+          <div class="hidden">
+              <a class="fancybox" rel="gallery4" title="Alt Half-Page Typography Flyer for New Castle Living" href="img/portfolio/newcastle2.png">
+                <img src="img/portfolio/newcastle2.png" alt=""/>
+              </a>
+              
+              <a class="fancybox" rel="gallery4" title="New Castle Logo" href="img/portfolio/newcastle3.png">
+                <img src="img/portfolio/newcastle3.png" alt=""/>
+              </a>
+          </div>
+        </div>
+
+        <div class="pure-u-1-3 photo-box viewport">
+          <a class="fancybox" rel="gallery5" title="HappyHour Cupcakes" href="img/portfolio/cake1.png">
+            <span class="dark-background plus">+</span>
+            <img src="img/portfolio/cake-sm.png" alt=""/>
+          </a>
+
+          <div class="hidden">
+              <a class="fancybox" rel="gallery5" title="Neon color concepts" href="img/portfolio/cake2.jpg">
+                <img src="img/portfolio/cake2.jpg" alt=""/>
+              </a>
+              
+              <a class="fancybox" rel="gallery5" title="Logo Badge for HappyHour Cupcakes" href="img/portfolio/cake3.png">
+                <img src="img/portfolio/cake3.png" alt=""/>
+              </a>
+          </div>
+        </div>
+
+        <div class="pure-u wide photo-box viewport">
+          <a class="fancybox" rel="gallery8" title="Typography Self Promotion" href="img/portfolio/promo1.png">
+            <span class="dark-background plus">+</span>
+            <img src="img/portfolio/promo-sm.png" alt=""/>
+          </a>
+
+          <div class="hidden">
+              <a class="fancybox" rel="gallery8" title="Typography Dual Promotion" href="img/portfolio/promo2.png">
+                <img src="img/portfolio/promo2.png" alt=""/>
+              </a>
+
+              <a class="fancybox" rel="gallery8" title="Typography Dual Promotion" href="img/portfolio/promo3.png">
+                <img src="img/portfolio/promo3.png" alt=""/>
+              </a>
+          </div>
+        </div>
+
+
+        <div class="pure-u-1-3 photo-box viewport">
+          <a class="fancybox" rel="gallery6" title="Website mockup for LoveCage.com" href="img/portfolio/lovecage2.png">
+            <span class="dark-background plus">+</span>
+            <img src="img/portfolio/lovecage-sm.png" alt=""/>
+          </a>
+
+          <div class="hidden">
+              <a class="fancybox" rel="gallery6" title="Web Product Logo - Love Cage" href="img/portfolio/lovecage1.png">
+                <img src="img/portfolio/lovecage1.png" alt=""/>
+              </a>
+              
+              <a class="fancybox" rel="gallery6" title="Web Product Logo Alt- Love Cage" href="img/portfolio/lovecage3.png">
+                <img src="img/portfolio/lovecage3.png" alt=""/>
+              </a>
+          </div>
+        </div>
+
+        <div class="pure-u-2-3 photo-box viewport">
+          <a class="fancybox" rel="gallery7" title="Home Page design for XPANDcorp.com" href="img/portfolio/xpand1.png">
+            <span class="dark-background plus">+</span>
+            <img src="img/portfolio/xpand-sm.png" alt=""/>
+          </a>
+
+          <div class="hidden">
+              <a class="fancybox" rel="gallery7" title="Contact Us Page design for XPANDcorp.com" href="img/portfolio/xpand2.png">
+                <img src="img/portfolio/xpand3.png" alt=""/>
+              </a>
+              
+              <a class="fancybox" rel="gallery7" title="XPAND Logo design" href="img/portfolio/xpand3.png">
+                <img src="img/portfolio/xpand1.png" alt=""/>
+              </a>
+          </div>
+        </div>
+
+        <div class="pure-u wide photo-box viewport">
+          <a class="fancybox" rel="gallery9" title="Remodel of the www.sourcecast.net website" href="img/portfolio/sourcecast1.png">
+            <span class="dark-background plus">+</span>
+            <img src="img/portfolio/sourcecast-sm.png" alt=""/>
+          </a>
+
+          <div class="hidden">
+              <a class="fancybox" rel="gallery9" title="Responsive and lightweight" href="img/portfolio/sourcecast2.png">
+                <img src="img/portfolio/sourcecast2.png" alt=""/>
+              </a>
+
+              <a class="fancybox" rel="gallery9" title="Use of Parallax scrolling" href="img/portfolio/sourcecast3.png">
+                <img src="img/portfolio/sourcecast3.png" alt=""/>
+              </a>
+          </div>
+        </div>
+
     </div>
-</section> -->
 
-</div> <!-- END #page -->
+</div>
+
+<!-- Footer -->
+<div id="footer">
+  <p class="l-box">
+    <a href="#top" class=" scroll pure-button snd-button">Top</a>
+  </p>
+</div>
+  
 
 
-<!-- jquery -->
-<script src="files/js/jquery-1.7.1.min.js"></script>
-<script src="files/js/jquery.isotope.min.js"></script>
-<script src='files/js/jquery.easing.1.3.js'></script>
-<script src='files/js/jquery.easing.compatibility.js'></script>
-<script src="files/js/loader.js"></script>
-<script src="files/js/script.js"></script>
+	<script src="http://yui.yahooapis.com/3.12.0/build/yui/yui.js"></script>
+
+  <script>
+  YUI().use('node-base', 'node-event-delegate', function (Y) {
+      // This just makes sure that the href="#" attached to the <a> elements
+      // don't scroll you back up the page.
+      Y.one('body').delegate('click', function (e) {
+          e.preventDefault(); 
+      }, 'a[href="#"]');
+  });
+  </script>
+
+  <script type="text/javascript">
+    $(".scroll").click(function(event){     
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+    });
+  </script>
+  
+
+
+
+
+  <script src="js/modal.js"></script>
 
 </body>
 </html>
-
