@@ -60,7 +60,7 @@ body {
 .section-title {
   font-family: 'Muli', sans-serif;
   margin-top: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 /*.section-title h3 {
@@ -101,6 +101,21 @@ body {
   /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #333;
+}
+
+.footer ul {
+  margin-top: 20px;
+}
+
+.footer-links li {
+  color: #fff;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.footer-links a {
+  color: #FFF;
 }
 
 .footer p {
