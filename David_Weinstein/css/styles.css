@@ -1,0 +1,224 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 80px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 80px;
+  background-color: #3D3F43;
+}
+
+.footer-text {
+
+  color: #F3F3F3;
+}
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width: 900px;
+  padding: 0 15px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+
+/** Generic CSS **/
+
+.no-padding {
+  padding: 0; }
+
+.no-gutter [class*=col-] {
+  padding-right: 0;
+  padding-left: 0; }
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.mtl {
+  margin-top: 80px;
+}
+.mtm {
+  margin-top: 50px;
+}
+.mts {
+  margin-top: 20px;
+}
+.mtxs {
+  margin-top: 5px;
+}
+
+.mbl {
+  margin-bottom: 80px;
+}
+.mbm {
+  margin-bottom: 50px;
+}
+.mbs {
+  margin-bottom: 20px;
+}
+.mbxs {
+  margin-bottom: 5px;
+}
+.no-margin {
+  margin: 0;
+}
+
+.gray-section {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  background-color: #f4f4f4;  
+}
+
+.gray-section-text {
+  text-align: justify;
+  line-height: 1.5em;
+  font-size: 18px;
+}
+
+/** Typography **/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+.h1,.h2,.h3,.h4,.h5,.h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.small{
+  font-size: 12px;
+}
+.line-break {
+  border-bottom: 1px solid #eee;
+}
+
+.bold-underline {
+  content: "";
+  display: table-cell;
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 5px solid #333333;
+}
+
+blockquote {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+  border-left: none;
+  margin-left: 10px;
+}
+
+blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
+}
+
+blockquote cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+ 
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+
+.logo {
+  max-width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-responsive, .header-img {
+  max-height: 400px;
+  width: 100%;
+}
+
+.thumbnail {
+    position: relative;
+    border: none;
+    background-color: transparent;
+}
+
+.thumbnail .caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    color: #ffffff;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.bg-gray {
+  background-color: #3D3F43;
+  height: 500px;
+}
+
+.bg-text-box{
+  position: absolute;
+  color: white;
+  padding: 8%;
+  margin-right: 10%;
+  margin-left: 10%;
+  border: solid 1px #ffffff;
+  top: 15%;
+}
+
+.bg-text {
+  font-size: 16px;
+  line-height: 1.7em;
+  text-align: justify;
+}
+
+.bg-one {
+  height: 500px;
+  background:#efefef url('../images/desk-glasses-dark.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+
