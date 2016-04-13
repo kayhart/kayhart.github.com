@@ -1,0 +1,728 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700);
+@import url(http://fonts.googleapis.com/css?family=Cardo:400,400italic,700);
+/* ==========================================================================
+Typography
+========================================================================== */
+p {
+  font-size: 14px;
+  line-height: 22.4px;
+  color: #6c7279; }
+
+h1 {
+  font-size: 70px;
+  color: #2d3033; }
+
+h2 {
+  font-size: 40px;
+  color: #2d3033; }
+
+h3 {
+  font-size: 28px;
+  color: #2d3033;
+  font-weight: 300; }
+
+h4 {
+  font-size: 22px;
+  color: #2d3033;
+  font-weight: 400; }
+
+h5 {
+  font-size: 14px;
+  color: #2d3033;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+/* ==========================================================================
+  General Styles
+========================================================================== */
+
+.btn {
+  background-color: #DC2727;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  border: 0;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  display: inline-block;
+  text-transform: uppercase; }
+  .btn:hover, .btn:focus {
+    background-color: #C62121;
+    color: #fff; }
+  .btn-large {
+    padding: 15px 40px; }
+
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
+}
+.btn-primary.outline {
+   border: 1px solid #787878 ;
+   color: #787878 ;
+}
+
+.btn-primary.outline.middle {
+ border-left: 1px;
+ border-right: 1px;
+}
+
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+   color: #fff;
+   border-color: #787878 ;
+   background: #787878 ;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+   border-color: #787878 ;
+   color: #fff;
+   box-shadow: none;
+}
+
+.col-text {
+  float: none;
+}
+
+a {
+  color: #333333;
+  }
+
+a:hover, a:focus {
+  color: #DC2727;
+  text-decoration: none;
+  -moz-transition: background-color, color, 0.3s;
+  -o-transition: background-color, color, 0.3s;
+  -webkit-transition: background-color, color, 0.3s;
+  transition: background-color, color, 0.3s; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #6c7279; }
+
+ul, ol {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  list-style: none; }
+
+.no-padding {
+  padding: 0; }
+
+.no-gutter [class*=col-] {
+  padding-right: 0;
+  padding-left: 0; }
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.mtxl {
+  margin-top: 100px;
+}
+.mtl {
+  margin-top: 80px;
+}
+.mtm {
+  margin-top: 50px;
+}
+.mts {
+  margin-top: 25px;
+}
+
+.mbxl {
+  margin-bottom: 100px;
+}
+.mbl {
+  margin-bottom: 80px;
+}
+.mbm {
+  margin-bottom: 50px;
+}
+.mbs {
+  margin-bottom: 25px;
+}
+
+.small {
+  padding-right: 5px;
+}
+
+.less-padding-left{
+  padding-left: 2px;
+}
+
+.less-padding-right{
+  padding-right: 2px;
+}
+
+/* ==========================================================================
+  $Section
+========================================================================== */
+section.section {
+  padding: 90px 0;
+}
+
+section.alt {
+  background:#fafafa;
+  border-top:1px solid #dadada;
+  border-bottom:1px solid #dadada; 
+}
+
+.section-title {
+  font-size: 38px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Google Map  */
+#map {
+  width: 100%;
+  height: 500px;
+}
+
+/* ==========================================================================
+  $FormStack Overrides
+========================================================================== */
+
+.fsSubmitButton {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fs-ngdialog-content {
+  display: none;
+}
+
+.fsBody .fsForm .fsSubmit.fsPagination {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.fsForm .fsSubmit {
+    padding: 5px !important;
+}
+
+#recaptcha_area, #recaptcha_table {
+  width: 318px!important;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+  padding-top: 5px;
+}
+
+/* ==========================================================================
+	$Header
+========================================================================== */
+
+.logo {
+    width:180px;
+    height:24px;
+}
+
+#nav {
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+  -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+  animation-timing-function: linear;
+}
+
+.navbar-right .dropdown-menu {
+  right: auto;
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: transparent;
+  border-color: #337ab7;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/*NAVBAR WHILE AT TOP*/
+
+.navbar .container{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.navbar ul li a{
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.affix-top ul li a:hover, a:focus, a:active {
+  background-color: transparent;
+  color: #D0D0D0;
+}
+
+
+.affix-top .dropdown.open a{
+  background-color: transparent;
+}
+
+.affix-top .dropdown-menu {
+  background-color: transparent;
+  box-shadow: none;
+  border-color: #ffffff;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+/*NAVBAR WHILE SCROLLING*/
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 100000;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.nav-elements {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
+.affix .navbar-toggle .icon-bar {
+  background-color: #333333;
+}
+
+.affix ul li a{
+  color: #333333;
+  letter-spacing: 1px;
+}
+
+.affix .dropdown-menu {
+  padding-top: 0px;
+  border: none;
+}
+
+.affix ul li a:hover, a:focus, a:active {
+  background-color: transparent;
+  color: #000000;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  background-color: transparent;
+}
+
+
+/*NAVBAR STATIC*/
+
+.affix.altnav {
+  border-bottom: 1px solid #D8D8D8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 100000;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 0px;
+}
+
+.navbar .container.altnav{
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+/* ==========================================================================
+	$Banner
+========================================================================== */
+.banner {
+  background-image: url(../images/banner.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 750px; }
+
+.banner-text {
+  padding-top: 3%; }
+  .banner-text p span {
+    color: #fff;   
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 20px;
+    line-height: 1.1;
+    text-transform: uppercase; }
+
+@media screen and (min-width: 480px) {
+  .banner-text p span {
+    font-size: 70px;
+  }
+}
+
+/* ==========================================================================
+  $Flooring - HoverStyles
+========================================================================== */
+
+/* Common style */
+.grid figure {
+  position: relative;
+  overflow: hidden;
+/*float: left;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 48%;*/
+  height: auto;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.grid figure h2 {
+  font-size: 1.5em;
+  word-spacing: -0.15em;
+  font-weight: 500;
+}
+
+.grid figure h2 span {
+  font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+
+/*---------------*/
+/***** Oscar *****/
+/*---------------*/
+
+figure.effect-oscar {
+  background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+  background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+}
+
+figure.effect-oscar img {
+  opacity: 0.9;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+figure.effect-oscar figcaption {
+  padding: 3em;
+  background-color: rgba(58,52,42,0.3);
+  -webkit-transition: background-color 0.35s;
+  transition: background-color 0.35s;
+}
+
+figure.effect-oscar figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 1px solid #fff;
+  content: '';
+}
+
+figure.effect-oscar h2 {
+  color: #FFF;
+  margin: 20% 0 10px 0;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+figure.effect-oscar.small-thumb h2 {
+  color: #FFF;
+  margin: 15% 0 10px 0;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+figure.effect-oscar figcaption::before,
+figure.effect-oscar p {
+  color: #FFF;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+figure.effect-oscar:hover h2 {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-oscar:hover figcaption::before,
+figure.effect-oscar:hover p {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+figure.effect-oscar:hover figcaption {
+  background-color: rgba(58,52,42,0);
+}
+
+figure.effect-oscar:hover img {
+  opacity: 0.4;
+}
+
+figure.effect-oscar h2.two-lines {
+  margin-top: 5px;
+}
+@media  (max-width: 1240px) {
+  figure.effect-oscar h2.two-lines {
+  margin-top: 5px;
+  font-size: 1.2em;
+  }
+}
+
+/* ==========================================================================
+  $Flooring - Products
+========================================================================== */
+
+figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+figure figcaption {
+  /*padding: 2em;*/
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure figcaption::before,
+figure figcaption::after {
+  pointer-events: none;
+}
+
+
+figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.product-sections {
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.specs li {
+  padding-bottom: 5px;
+}
+
+.product-nav li a {
+    font-weight: 600;
+    line-height: 2.5em;
+}
+
+.product-nav li a:last-child {
+  padding-right: 0px;
+}
+
+
+
+/* ==========================================================================
+	$Footer
+========================================================================== */
+.footer {
+  text-align: center; }
+  .footer-top {
+    background-color: #999;
+    padding-top: 50px; }
+  .footer-bottom {
+    background-color: #333;
+    padding: 20px 0; }
+  .footer .footer-col {
+    margin-bottom: 80px; }
+  .footer h5 {
+    color: #fff; }
+  .footer h5 {
+    margin-bottom: 20px; }
+  .footer p {
+    color: rgba(255, 255, 255, 0.5); }
+  .footer a {
+    color: #fff; }
+    .footer a:hover {
+      color: #DC2727; }
+  .footer .footer-share {
+    margin-top: 0; }
+    .footer .footer-share li {
+      display: inline-block;
+      float: none; }
+    .footer .footer-share a {
+      border-width: 2px;
+      color: #fff; }
+  .footer .fa-heart {
+    color: #DC2727;
+    font-size: 11px;
+    margin: 0 2px; }
+
+/* ==========================================================================
+	$Utilities
+========================================================================== */
+
+.animated {
+  visibility: visible; }
+
+
+/* Animated SVG Logo */
+.animated-logo {
+  width:260px; 
+  margin: 0 auto; 
+}
+.st1 {
+    fill:none;
+    stroke:#ffffff;
+    stroke-width:2;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-dasharray: 600;
+    stroke-dashoffset:0;
+    -webkit-animation:dash 2s linear forwards;
+    -moz-animation:dash 2s linear forwards;
+    animation:dash 2s linear forwards;
+    opacity:0
+}
+
+
+.st0 {
+    fill:none;
+    stroke:#ffffff;
+    stroke-width:3;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-dasharray:800;
+    stroke-dashoffset:0;
+    -webkit-animation:dash 2s linear forwards;
+    -moz-animation:dash 2s linear forwards;
+    animation:dash 2s linear forwards;
+    opacity:0
+} 
+
+@-webkit-keyframes dash {
+    from {
+        stroke-dashoffset:800;
+    }
+     
+    to {
+        stroke-dashoffset:1;
+        opacity:1;
+        }
+}
+ 
+@-moz-keyframes dash {
+from {
+    stroke-dashoffset:800;
+}
+ 
+to {
+    stroke-dashoffset:1;
+    opacity:1;
+	}	
+}
+ 
+@keyframes dash {
+from {
+    stroke-dashoffset:800;
+}
+ 
+to {
+    stroke-dashoffset:1;
+    opacity:1;
+	}
+}
+  
+

@@ -1,0 +1,22 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1507" measuredH="771" mockupW="1300" mockupH="680">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::SiteMap" x="207" y="91" w="-1" h="-1" measuredW="1300" measuredH="430" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs>%2Ccollection%26bm%3Bcollection.bmml%26bm%3Bcollection.bmml%26bm%3Bcollection.bmml%2C%2C%2C%2C%2Ccollection%26bm%3Bcollection.bmml%26bm%3Bcollection.bmml%26bm%3Bcollection.bmml%2C%2C%2C%2C%2C%2C%2C%2C%2C%2C%2C%2C%2C%2C%2C%2C%2C</hrefs>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2236%2C120%2C183%2C190%22%20href%3D%22collection.bmml%22%20alt%3D%22collection%22%20id%3D%220%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22278%2C120%2C422%2C190%22%20href%3D%22collection.bmml%22%20alt%3D%22collection%22%20id%3D%220%22/%3E</map>
+        <text>Home%0A-%20%5BHardwood%5D%20%28collection%29%0A--%20Product%201%0A---Warranty%0A--%20Product%202%0A---Warranty%0A-%5BLaminate%5D%20%28collection%29%0A--Product%201%0A---Warranty%0A--Product%202%0A---Warranty%0A-Kitchen%20Cabinetts%20later%0A--Product%201%0A---Warranty%0A--Product%202%0A---Warranty%0A-Bathroom%20Cabinetts%20later%0A--Product%201%0A---Warranty%0A--Product%202%0A---Warranty%0A-%20%5BAbout%20Us%5D%0A-%20%5BFAQ%5D%0A-%20%5BPrivacy%20Policy%5D</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::HCurly" x="216" y="536" w="200" h="235" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>On%20each%20product%20page%20there%20is%20a%20link%20to%20Warranty%20information.%20That%20warranty%20information%20is%20the%20same%20for%20each%20product%20category%20and%20not%20unique%20for%20each%20product.%20So%20Hardwood%20would%20have%20one%20warranty%20page%20and%20Laminate%20would%20have%20another.%20In%20theory%20this%20could%20be%20the%20same%20page%20but%20this%20give%20us%20more%20flexibility%20of%20customizing%20the%20content.</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Tooltip" x="336" y="138" w="204" h="65" measuredW="199" measuredH="0" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>North%20American%20Naturals%0Apart%20of%20this%20group%3F</text>
+        <tooltipDirection>SE</tooltipDirection>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
