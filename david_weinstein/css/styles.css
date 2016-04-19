@@ -135,9 +135,11 @@ footer i {
 .img-seperator {
   height: 200px;
   background:#efefef url('../images/books2.jpg');
-  background-position: 0px -200px;
+  background-position: 28% 34%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  /*background-position: center;*/
   background-repeat: no-repeat; 
 }
 
@@ -240,7 +242,7 @@ blockquote:before {
 
 blockquote cite {
   color: #999999;
-  font-size: 14px;
+  font-size: 20px;
   display: block;
   margin-top: 5px;
 }
@@ -307,7 +309,7 @@ blockquote cite:before {
   margin-right: 10%;
   margin-left: 10%;
   border: solid 1px #2A2A2A;
-  top: 8%;
+  top: 12%;
 }
 
 .bg-text {
