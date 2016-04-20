@@ -20,11 +20,13 @@ body {
 
 .footer-text {
   color: #F3F3F3;
+  font-size: 17px;
  
 }
 
 footer a {
   color: white;
+  font-size: 15px;
 }
 
 footer a:hover{
@@ -296,6 +298,13 @@ blockquote cite:before {
     color: #ffffff;
     padding-right: 10%;
     padding-left: 10%;
+}
+
+.bg-yellow-top {
+  background-color: #FFB400;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 .bg-gray {
