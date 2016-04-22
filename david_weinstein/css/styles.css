@@ -354,5 +354,9 @@ blockquote cite:before {
   .bg-text-box {
     top:0;
   }
+
+  .footer-text {
+  	font-size: 13px;
+  }
 }
 
